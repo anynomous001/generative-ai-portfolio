@@ -80,7 +80,7 @@ export default function HomePage() {
 
             </h1> */}
 
-              <h1 className="mt-3 leading-[0.9] text-6xl md:text-[5rem] lg:text-[6rem] font-extrabold "
+              <h1 className="mt-3 leading-[0.95] text-3xl sm:text-4xl md:text-6xl lg:text-[5.5rem] font-extrabold "
                 style={{
                   background: "linear-gradient(90deg,#202020 10%,#c6c6c6 50%,#202020 90%)",
                   WebkitBackgroundClip: "text",
@@ -126,7 +126,7 @@ export default function HomePage() {
             </div>
 
             {/* Right column */}
-            <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-md mx-auto p-6 relative rounded-xl bg-white/5 dark:bg-black/20">
+            <div className="w-full md:max-w-md md:mx-0 border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start p-6 relative rounded-xl bg-white/5 dark:bg-black/20">
               <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
               <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
               <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
@@ -221,7 +221,7 @@ export default function HomePage() {
           />
 
 
-          <h1 className="font-sans font-semibold text-[84px] leading-[1.1] tracking-tight flex items-center"
+          <h1 className="font-sans font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-[1.05] tracking-tight flex items-center"
             style={{
               background: "linear-gradient(90deg,#202020 10%,#c6c6c6 50%,#202020 90%)",
               WebkitBackgroundClip: "text",
@@ -264,7 +264,7 @@ export default function HomePage() {
 
 
         <Section>
-          <h1 className="font-sans font-semibold text-[84px] leading-[1.1] tracking-tight flex items-center"
+          <h1 className="font-sans font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-[1.05] tracking-tight flex items-center"
             style={{
               background: "linear-gradient(90deg,#202020 10%,#c6c6c6 50%,#202020 90%)",
               WebkitBackgroundClip: "text",
@@ -331,7 +331,7 @@ export default function HomePage() {
               viewport={{ once: true }}
             >
 
-              <h1 className="font-sans font-semibold text-[84px] leading-[1.1] tracking-tight flex items-center"
+              <h1 className="font-sans font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-[1.05] tracking-tight flex items-center"
                 style={{
                   background: "linear-gradient(90deg,#202020 10%,#c6c6c6 50%,#202020 90%)",
                   WebkitBackgroundClip: "text",
@@ -349,7 +349,7 @@ export default function HomePage() {
                 > Me</span>
               </h1>
 
-              <p className=" mt-4 text-muted-foreground font-extralight text-2xl leading-9">
+              <p className=" mt-4 text-muted-foreground font-extralight text-base md:text-lg leading-7 md:leading-9">
                 I’m a front‑end engineer focused on motion, accessibility, and performance.
                 I love crafting immersive, minimal web experiences that feel fast, responsive,
                 and elegant. I’m a front‑end engineer focused on motion, accessibility, and performance.
