@@ -40,7 +40,7 @@ const projects: Project[] = [
   {
     id: 4,
     title: "TaskFlow Sonet",
-    description:`Lorem ipsum dolor sit amet  architecto blanditiis dolorum voluptatem. Aliquam, error. Atque aspernatur laboriosam corporis? A, at obcaecati!Eveniet nesciunt voluptatibus officiis exercitationem pariatur optio dolorum modi, aut dolore vitae quia, quisquam repudiandae ullam blanditiis sed distinctio adipisci dolores, facere tempore similique. Beatae enim ipsum ad ea architecto.
+    description: `Lorem ipsum dolor sit amet  architecto blanditiis dolorum voluptatem. Aliquam, error. Atque aspernatur laboriosam corporis? A, at obcaecati!Eveniet nesciunt voluptatibus officiis exercitationem pariatur optio dolorum modi, aut dolore vitae quia, quisquam repudiandae ullam blanditiis sed distinctio adipisci dolores, facere tempore similique. Beatae enim ipsum ad ea architecto.
    ate nam repelleaperiam ea. Ratione nostrum commodi similique veniam`,
     image: "/images/readium.webp",
     color: "from-green-600 to-emerald-400",
@@ -62,12 +62,12 @@ export default function ProjectShowcase() {
   const currentProject = projects[selectedProject]
 
   return (
-    <div className="flex h-screen overflow-hidden bg-background">
-   
+    <div className="grid grid-cols-[30%_70%] h-screen  bg-background mt-4">
 
-      {/* Right side - Project List */}
-      <motion.div className="w-96 bg-background border-r border-border flex flex-col" layout>
-        <div className="flex-1 overflow-hidden flex flex-col">
+
+      {/* Left side - Project List */}
+      <motion.div className="h-[80%] bg-background border-2 border-solid  border-amber-50 flex flex-col overflow-y-hidden" >
+        <div className=" overflow-hidden flex flex-col">
           {/* Header */}
           <div className="px-8 pt-12 pb-8 border-b border-border">
             <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>
@@ -77,7 +77,7 @@ export default function ProjectShowcase() {
           </div>
 
           {/* Project List */}
-          <div className="flex-1 overflow-y-auto px-8 py-8">
+          <div className=" overflow-y-auto px-8 py-8">
             <div className="space-y-4">
               {projects.map((project, index) => (
                 <motion.button
@@ -91,11 +91,10 @@ export default function ProjectShowcase() {
                   transition={{ type: "spring", stiffness: 300, damping: 30 }}
                 >
                   <motion.div
-                    className={`text-lg font-medium transition-colors duration-300 ${
-                      selectedProject === index
-                        ? "text-foreground"
-                        : "text-muted-foreground group-hover:text-foreground"
-                    }`}
+                    className={`text-lg font-medium transition-colors duration-300 ${selectedProject === index
+                      ? "text-foreground"
+                      : "text-muted-foreground group-hover:text-foreground"
+                      }`}
                     animate={{
                       color: selectedProject === index ? "rgb(var(--foreground))" : "rgb(var(--muted-foreground))",
                     }}
@@ -150,8 +149,9 @@ export default function ProjectShowcase() {
         </AnimatePresence>
       </motion.div>
 
-         {/* Left side - Project Image */}
-      <motion.div className="flex-1  overflow-hidden" layout>
+      {/* Right side - Project Image */}
+
+      <motion.div className="col-span-[70%] flex" >
         <AnimatePresence mode="wait">
           <motion.div
             key={currentProject.id}
@@ -162,49 +162,49 @@ export default function ProjectShowcase() {
             className="flex flex-col gap-2"
           >
             <div
-              className={`w-full h-[30%] py-9 flex items-center justify-center relative border-black border-2 border-solid`}
+              className={`w-full h-[50%] py-2 flex items-center justify-center relative border-black border-2 border-solid`}
             >
-              <motion.img 
-                src={currentProject.image}                                                                                                     
+              <motion.img
+                src={currentProject.image}
                 alt={currentProject.title}
-                className="w-3/4 h-3/4 object-cover rounded-3xl shadow-2xl"
+                className="w-[90%] h-[90%] object-cover rounded-3xl shadow-2xl"
                 drag
                 dragElastic={0.2}
                 whileHover={{ scale: 1.05 }}
                 whileDrag={{ scale: 1.1 }}
               />
             </div>
-      <div className="w-full px-12 pb-12  border-black border-2 border-solid">
-                <h2 className="text-2xl font-bold text-foreground mb-2 border-b border-border pb-2">
-                  {currentProject.title}
-                </h2>
-                <p className="text-base text-muted-foreground leading-relaxed mb-4">
-                  {currentProject.description}
-                </p>
-                  <ul className="mt-6 flex flex-wrap gap-3">
-                          {["Clean UX", "Accessibility", "Motion Design", "Web Perf", "React/Next.js", "Tailwind CSS"].map((skill, i) => (
-                            <motion.li
-                              key={skill}
-                              whileHover={{ scale: 1.1, backgroundColor: "rgba(255,255,255,0.1)" }}
-                              transition={{ type: "spring", stiffness: 300 }}
-                              style={{
-                                backdropFilter: "blur(6px)",
-                              }}
-                              className="rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs text-muted-foreground hover:text-white cursor-default select-none"
-                            >
-                              {skill}
-                            </motion.li>
-                          ))}
-                        </ul>
+            <div className="w-full px-12 pb-12  border-white border-2 border-solid">
+              <h2 className="text-2xl font-bold text-foreground mb-2 border-b border-border pb-2">
+                {currentProject.title}
+              </h2>
+              <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+                {currentProject.description}
+              </p>
+              <ul className="mt-6 flex flex-wrap gap-3">
+                {["Clean UX", "Accessibility", "Motion Design", "Web Perf", "React/Next.js", "Tailwind CSS"].map((skill, i) => (
+                  <motion.li
+                    key={skill}
+                    whileHover={{ scale: 1.1, backgroundColor: "rgba(255,255,255,0.1)" }}
+                    transition={{ type: "spring", stiffness: 300 }}
+                    style={{
+                      backdropFilter: "blur(6px)",
+                    }}
+                    className="rounded-full border border-white bg-white/5 px-4 py-1.5 text-xs text-muted-foreground hover:text-white cursor-default select-none"
+                  >
+                    {skill}
+                  </motion.li>
+                ))}
+              </ul>
               <div className="flex gap-4 mt-4">
                 <button className="bg-primary text-primary-foreground px-6 py-2 rounded-lg font-medium hover:opacity-90 transition-opacity">
-                    Live Preview
+                  Live Preview
                 </button>
                 <button className="bg-card text-foreground px-6 py-2 rounded-lg font-medium border border-border hover:bg-background hover:opacity-90 transition-opacity">
-                    See Source Code
+                  See Source Code
                 </button>
-             </div>
-      </div>
+              </div>
+            </div>
           </motion.div>
         </AnimatePresence>
       </motion.div>
