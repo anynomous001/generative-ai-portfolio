@@ -184,16 +184,7 @@ export default function HomePage() {
 
         <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background via-background/80 to-transparent pointer-events-none"></div>
       </Section>
-      {/* subtle bottom blend toward the about section color */}
-      {/* <div
-  aria-hidden
-  className="absolute left-0 right-0 bottom-0 h-36 pointer-events-none z-0"
-  style={{
-    background:
-      "linear-gradient(180deg, transparent, color-mix(in oklch, #0A0A0A 86%, transparent))",
-    opacity: 0.9,
-  }}
-/> */}
+
 
 
 
