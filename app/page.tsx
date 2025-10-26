@@ -212,7 +212,7 @@ export default function HomePage() {
           />
 
 
-          <h1 className="font-sans font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-[1.05] tracking-tight flex items-center"
+          <h1 className="font-sans font-semibold text-5xl sm:text-5xl md:text-5xl lg:text-[75px] leading-[1.05] tracking-tight flex items-center"
             style={{
               background: "linear-gradient(90deg,#202020 10%,#c6c6c6 50%,#202020 90%)",
               WebkitBackgroundClip: "text",
@@ -255,7 +255,7 @@ export default function HomePage() {
 
 
         <Section>
-          <h1 className="font-sans font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-[1.05] tracking-tight flex items-center"
+          <h1 className="font-sans font-semibold text-5xl sm:text-5xl md:text-6xl lg:text-[75px] leading-[1.05] tracking-tight flex items-center"
             style={{
               background: "linear-gradient(90deg,#202020 10%,#c6c6c6 50%,#202020 90%)",
               WebkitBackgroundClip: "text",
@@ -307,7 +307,7 @@ export default function HomePage() {
             className="absolute inset-0 pointer-events-none z-10"
             style={{
               clipPath: "ellipse(100% 100% at 40% 40%)",
-              background: "linear-gradient(to bottom, color-mix(in oklch, #0A0A0A 100%, transparent) 0%, color-mix(in oklch, #0A0A0A 80%, transparent) 10%, transparent 25%)",
+              background: "linear-gradient(to bottom, color-mix(in oklch, #0A0A0A 100%, transparent) 0%, color-mix(in oklch, #0A0A0A 80%, transparent) 10%, transparent 22%)",
               opacity: 1,
             }}
           />
@@ -322,7 +322,7 @@ export default function HomePage() {
               viewport={{ once: true }}
             >
 
-              <h1 className="font-sans font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-[1.05] tracking-tight flex items-center"
+              <h1 className="font-sans font-semibold text-5xl sm:text-5xl md:text-6xl lg:text-[75px] leading-[1.05] tracking-tight flex items-center"
                 style={{
                   background: "linear-gradient(90deg,#202020 10%,#c6c6c6 50%,#202020 90%)",
                   WebkitBackgroundClip: "text",
@@ -375,7 +375,23 @@ export default function HomePage() {
           <div className="grid gap-10 md:grid-cols-2">
             {/* Left column */}
             <div>
-              <h1 className="text-5xl font-bold">Let&apos;s Connect</h1>
+              <h1 className="font-sans font-semibold text-5xl sm:text-5xl md:text-6xl lg:text-[75px] leading-[1.05] tracking-tight flex items-center"
+                style={{
+                  background: "linear-gradient(90deg,#202020 10%,#c6c6c6 50%,#202020 90%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  color: "transparent"
+                }}
+              >
+                Let&apos;s  <span className="ml-1 font-bold"
+                  style={{
+                    background: "linear-gradient(90deg,#ededed 20%,#515151 100%)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                    color: "transparent"
+                  }}
+                > Connect</span>
+              </h1>
               <p className="lead mt-3">
                 Always interested in new opportunities, collaborations, and conversations about technology and design.
               </p>

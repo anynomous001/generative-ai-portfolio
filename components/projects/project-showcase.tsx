@@ -68,8 +68,8 @@ export default function ProjectShowcase() {
 
 
       {/* Left side - Project List */}
-      <motion.div className="bg-background border-2 border-solid border-amber-50 flex flex-col md:overflow-y-auto md:h-full">
-        <div className="overflow-hidden flex flex-col">
+      <motion.div className="bg-background flex flex-col md:overflow-y-auto md:h-full">
+        <div className="overflow-hidden flex flex-col border-2 border-solid border-r-white/10 border-r">
           {/* Header */}
           <div className="px-4 sm:px-6 md:px-8 pt-8 md:pt-12 pb-6 md:pb-8 border-b border-border">
             <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>
@@ -81,7 +81,7 @@ export default function ProjectShowcase() {
 
 
           {/* Project List in desktop*/}
-          <div className="hidden lg:flex flex-col flex-1 overflow-y-auto px-4 sm:px-6 md:px-8 py-6 md:py-8">
+          <div className="hidden lg:flex flex-col flex-1 overflow-y-auto px-4 sm:px-6 md:px-8 py-6 md:py-8 space-y-4">
 
             {projects.map((project, index) => (
               <motion.button
@@ -217,18 +217,18 @@ export default function ProjectShowcase() {
             transition={{ duration: 0.5 }}
             className="flex flex-col gap-2"
           >
-            <div className="w-full py-2 flex items-center justify-center relative border-black border-2 border-solid">
+            <div className="w-full py-6 flex items-center justify-center relative">
               <motion.img
                 src={currentProject.image}
                 alt={currentProject.title}
-                className="w-full max-w-[900px] h-48 sm:h-64 md:h-[50vh] object-cover rounded-3xl shadow-2xl"
+                className="w-[85%] max-w-[900px] h-48 sm:h-64 md:h-[50vh] object-cover rounded-3xl shadow-2xl"
                 drag
                 dragElastic={0.2}
                 whileHover={{ scale: 1.03 }}
                 whileDrag={{ scale: 1.05 }}
               />
             </div>
-            <div className="w-full px-4 sm:px-8 pb-12 border-white border-2 border-solid">
+            <div className="w-full px-4 sm:px-8 pb-12">
               <h2 className="text-2xl font-bold text-foreground mb-2 border-b border-border pb-2">
                 {currentProject.title}
               </h2>
