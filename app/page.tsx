@@ -80,7 +80,7 @@ export default function HomePage() {
 
             </h1> */}
 
-              <h1 className="mt-3 leading-[0.95] text-3xl sm:text-4xl md:text-6xl lg:text-[5.5rem] font-extrabold "
+              <h1 className="mt-3 leading-[0.95] text-5xl sm:text-5xl md:text-6xl lg:text-[5.5rem] font-extrabold "
                 style={{
                   background: "linear-gradient(90deg,#202020 10%,#c6c6c6 50%,#202020 90%)",
                   WebkitBackgroundClip: "text",
@@ -168,7 +168,7 @@ export default function HomePage() {
                     href={item.href}
                     target="_blank"
                     rel="noreferrer"
-                    className="rounded-xl p-4 hover:scale-[1.01] transition dark:text-white text-black"
+                    className="rounded-xl p-4 hover:scale-[1.01] transition dark:text-white text-black border border-white/[0.2]"
                   >
                     <div className="text-sm font-medium">{item.label}</div>
                     <div className="mt-1 text-sm text-black/75 dark:text-white/75">{item.handle}</div>
@@ -212,7 +212,7 @@ export default function HomePage() {
           />
 
 
-          <h1 className="font-sans font-semibold text-5xl sm:text-5xl md:text-5xl lg:text-[75px] leading-[1.05] tracking-tight flex items-center"
+          <h1 className="font-sans font-semibold text-5xl sm:text-5xl md:text-5xl lg:text-[75px] leading-[1.05] tracking-tight flex items-center "
             style={{
               background: "linear-gradient(90deg,#202020 10%,#c6c6c6 50%,#202020 90%)",
               WebkitBackgroundClip: "text",
