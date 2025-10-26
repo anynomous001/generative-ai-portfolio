@@ -251,10 +251,10 @@ export default function ProjectShowcase() {
                 ))}
               </ul>
               <div className="flex gap-4 mt-4">
-                <button className="bg-primary text-primary-foreground px-6 py-2 rounded-lg font-medium hover:opacity-90 transition-opacity">
+                <button className="bg-primary text-md md:text-primary-foreground px-6 py-2 rounded-lg font-medium hover:opacity-90 transition-opacity">
                   Live Preview
                 </button>
-                <button className="bg-card text-foreground px-6 py-2 rounded-lg font-medium border border-border hover:bg-background hover:opacity-90 transition-opacity">
+                <button className="bg-card   text-md md:text-foreground px-6 py-2 rounded-lg font-medium border border-border hover:bg-background hover:opacity-90 transition-opacity">
                   See Source Code
                 </button>
               </div>

@@ -210,6 +210,7 @@ export default function HomePage() {
       `
             }}
           />
+          {/* <PageBg variant="stripe" /> */}
 
 
           <h1 className="font-sans font-semibold text-5xl sm:text-5xl md:text-5xl lg:text-[75px] leading-[1.05] tracking-tight flex items-center "
