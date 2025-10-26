@@ -75,12 +75,35 @@ export default function HomePage() {
             <div>
               <p className="text-xs tracking-widest text-muted-foreground">PORTFOLIO / 2025</p>
               {/* <h1 className=" mt-3 leading-[0.9] text-6xl md:text-[5rem] lg:text-[6rem] font-extrabold text-white">
-              <span className="block">Pritam</span>
-              <span className="block text-chroma">Chakroborty</span>
+                <span className="block">Pritam</span>
+                <span className="block text-chroma">Chakroborty</span>
+              </h1> */}
 
-            </h1> */}
+              <h1
+                className="font-sans font-semibold  text-6xl md:text-[5rem] lg:text-[6rem]lg:text-[75px] leading-[1.05] tracking-tight flex items-center"
+                style={{
+                  background: "linear-gradient(90deg, rgba(185,230,240,0.85) 10%, rgba(234,224,236,0.7) 40%, rgba(255,255,255,0.5) 60%, rgba(180,203,230,0.85) 90%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  color: "transparent"
+                }}
+              >
+                <span className="block">Pritam</span>
 
-              <h1 className="mt-3 leading-[0.95] text-5xl sm:text-5xl md:text-6xl lg:text-[5.5rem] font-extrabold "
+              </h1>
+              <h1 className="font-sans font-semibold  text-6xl md:text-[5rem] lg:text-[6rem]lg:text-[75px] leading-[1.05] tracking-tight flex items-center"
+                style={{
+                  background: "linear-gradient(90deg, rgba(255,255,255,0.8) 10%, rgba(202,218,232,0.7) 40%, rgba(217,227,233,0.6) 70%, rgba(121,156,210,0.9) 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  color: "transparent"
+                }}
+              >
+                Chakroborty
+              </h1>
+
+
+              {/* <h1 className="font-sans font-semibold  text-6xl md:text-[5rem] lg:text-[6rem]lg:text-[75px] leading-[1.05] tracking-tight flex items-center "
                 style={{
                   background: "linear-gradient(90deg,#202020 10%,#c6c6c6 50%,#202020 90%)",
                   WebkitBackgroundClip: "text",
@@ -88,7 +111,7 @@ export default function HomePage() {
                   color: "transparent"
                 }}
               >
-                Pritam <span className="ml-1 font-bold block"
+                Pritam  <br />  <span className="ml-1 font-bold"
                   style={{
                     background: "linear-gradient(90deg,#ededed 20%,#515151 100%)",
                     WebkitBackgroundClip: "text",
@@ -96,7 +119,8 @@ export default function HomePage() {
                     color: "transparent"
                   }}
                 > Chakroborty</span>
-              </h1>
+              </h1> */}
+
               <p className="  mt-6 text-lg md:text-xl lg:text-2xl text-muted-foreground leading-relaxed">
                 Full Stack Generative AI Developer crafting digital experiences at the intersection of{" "}
                 <span className="font-semibold">design</span>, <span className="font-semibold">technology</span>, and{" "}
