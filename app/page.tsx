@@ -80,7 +80,7 @@ export default function HomePage() {
               </h1> */}
 
               <h1
-                className="font-sans font-semibold  text-6xl md:text-[5rem] lg:text-[6rem]lg:text-[75px] leading-[1.05] tracking-tight flex items-center"
+                className="font-sans font-semibold  text-5xl md:text-[5rem] lg:text-[6rem]lg:text-[75px] leading-[1.05] tracking-tight flex items-center"
                 style={{
                   background: "linear-gradient(90deg, rgba(185,230,240,0.85) 10%, rgba(234,224,236,0.7) 40%, rgba(255,255,255,0.5) 60%, rgba(180,203,230,0.85) 90%)",
                   WebkitBackgroundClip: "text",
@@ -91,7 +91,7 @@ export default function HomePage() {
                 <span className="block">Pritam</span>
 
               </h1>
-              <h1 className="font-sans font-semibold  text-6xl md:text-[5rem] lg:text-[6rem]lg:text-[75px] leading-[1.05] tracking-tight flex items-center"
+              <h1 className="font-sans font-semibold  text-5xl md:text-[5rem] lg:text-[6rem]lg:text-[75px] leading-[1.05] tracking-tight flex items-center"
                 style={{
                   background: "linear-gradient(90deg, rgba(255,255,255,0.8) 10%, rgba(202,218,232,0.7) 40%, rgba(217,227,233,0.6) 70%, rgba(121,156,210,0.9) 100%)",
                   WebkitBackgroundClip: "text",
