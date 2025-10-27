@@ -280,7 +280,7 @@ export default function HomePage() {
 
 
         <Section>
-          <h1 className="font-sans font-semibold text-5xl sm:text-5xl md:text-6xl lg:text-[75px] leading-[1.05] tracking-tight flex items-center"
+          <h1 className="font-sans font-semibold text-5xl sm:text-5xl md:text-6xl lg:text-[75px] leading-[1.05] tracking-tight flex items-center mt-8"
             style={{
               background: "linear-gradient(90deg,#202020 10%,#c6c6c6 50%,#202020 90%)",
               WebkitBackgroundClip: "text",

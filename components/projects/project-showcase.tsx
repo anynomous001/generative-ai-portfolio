@@ -222,10 +222,7 @@ export default function ProjectShowcase() {
                 src={currentProject.image}
                 alt={currentProject.title}
                 className="w-[85%] max-w-[900px] h-48 sm:h-64 md:h-[50vh] object-cover rounded-3xl shadow-2xl"
-                drag
-                dragElastic={0.2}
                 whileHover={{ scale: 1.03 }}
-                whileDrag={{ scale: 1.05 }}
               />
             </div>
             <div className="w-full px-4 sm:px-8 pb-12">
