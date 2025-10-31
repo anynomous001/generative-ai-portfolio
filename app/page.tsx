@@ -6,13 +6,16 @@ import Section from "@/components/section"
 import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 import { motion } from "framer-motion"
-
+import { LightRays } from "@/components/ui/light-rays"
 
 import React from "react";
 import { Icon } from "@/components/ui/evervault-card";
 import ProjectShowcase from "@/components/projects/project-showcase"
 import { TextReveal } from "@/components/ui/text-reveal"
-
+import {
+  ScrollVelocityContainer,
+  ScrollVelocityRow,
+} from "@/components/ui/scroll-based-velocity"
 
 const projects = [
   {
@@ -218,7 +221,6 @@ export default function HomePage() {
 
 
 
-
         <Section className="relative z-20">
           <div
             className="absolute inset-0 pointer-events-none"
@@ -267,7 +269,6 @@ export default function HomePage() {
 
       <div className="min-h-[calc(100dvh-64px)] relative overflow-hidden ">
         <PageBg variant="projects" />
-
         {/* Smoother curved top blend */}
         <div
           aria-hidden
@@ -280,25 +281,53 @@ export default function HomePage() {
         />
 
 
+
+
         <Section>
-          <h1 className="font-sans font-semibold text-5xl sm:text-5xl md:text-6xl lg:text-[75px] leading-[1.05] tracking-tight flex items-center justify-center md:justify-start text-center md:text-left mt-8"
-            style={{
-              background: "linear-gradient(90deg,#202020 10%,#c6c6c6 50%,#202020 90%)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-              color: "transparent"
-            }}
-          >
-            My <span className="ml-1 font-bold"
-              style={{
-                background: "linear-gradient(90deg,#ededed 20%,#515151 100%)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-                color: "transparent"
-              }}
-            > Experience</span>
-          </h1>
-          <p className="lead mt-2">A concise look at my professional journey.</p>
+          <ScrollVelocityContainer className="text-4xl font-bold tracking-[-0.02em] mt-16 md:text-7xl md:leading-[5rem]  border-2 border-white border-solid">
+            <ScrollVelocityRow baseVelocity={20} direction={1}>
+              <h1 className="font-sans pl-6 font-semibold text-5xl sm:text-5xl md:text-6xl lg:text-[75px] leading-[1.05] tracking-tight flex items-center justify-center md:justify-start text-center md:text-left mt-8"
+                style={{
+                  background: "linear-gradient(90deg,#202020 10%,#c6c6c6 50%,#202020 90%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  color: "transparent"
+                }}
+              >
+                My <span className="ml-1 font-bold"
+                  style={{
+                    background: "linear-gradient(90deg,#ededed 20%,#515151 100%)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                    color: "transparent"
+                  }}
+                > Experience</span>
+              </h1>
+            </ScrollVelocityRow>
+            <ScrollVelocityRow baseVelocity={20} direction={-1}>
+              <h1 className="font-sans font-semibold pl-6 text-5xl sm:text-5xl md:text-6xl lg:text-[75px] leading-[1.05] tracking-tight flex items-center justify-center md:justify-start text-center md:text-left mt-8"
+                style={{
+                  background: "linear-gradient(90deg,#202020 10%,#c6c6c6 50%,#202020 90%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  color: "transparent"
+                }}
+              >
+                My <span className="ml-1 font-bold"
+                  style={{
+                    background: "linear-gradient(90deg,#ededed 20%,#515151 100%)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                    color: "transparent"
+                  }}
+                > Experience</span>
+              </h1>
+            </ScrollVelocityRow>
+          </ScrollVelocityContainer>
+
+
+
+          <p className="lead mt-4">A concise look at my professional journey.</p>
           <div className="mt-8">
             <Timeline items={items} />
           </div>
