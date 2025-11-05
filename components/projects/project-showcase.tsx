@@ -69,12 +69,27 @@ export default function ProjectShowcase() {
   const currentProject = projects[selectedProject]
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-[30%_70%] bg-background mt-4 min-h-[60vh] md:min-h-[80vh] gap-6">
+    <div
+      className="relative grid grid-cols-1 md:grid-cols-[30%_70%] bg-background mt-4 min-h-[60vh] md:min-h-[80vh] gap-6 grid-ray-effect"
+      style={{ '--glass-color': currentProject.glassColor } as React.CSSProperties}
+    >
+      {/* Decorative ray overlay — appears to emanate from the left menu */}
+      <div
+        aria-hidden
+        className="absolute inset-0 pointer-events-none z-0"
+        style={{
+          background: `radial-gradient(900px 260px at 12% 50%, ${currentProject.glassColor} 0%, rgba(0,0,0,0) 32%), linear-gradient(90deg, ${currentProject.glassColor} 0%, rgba(255,255,255,0) 55%)`,
+          mixBlendMode: 'screen',
+          filter: 'blur(36px)',
+          opacity: 0.95,
+        }}
+      />
+
       {/* Left side - Project List */}
-      <motion.div className="bg-background flex flex-col md:overflow-y-auto md:h-full">
-        <div className="overflow-hidden flex flex-col border-2 border-solid border-r-white/10 border-r">
+      <motion.div className="relative z-10 bg-transparent flex flex-col md:overflow-y-auto md:h-full">
+        <div className="overflow-hidden flex flex-col ">
           {/* Header */}
-          <div className="px-4 sm:px-6 md:px-8 pt-8 md:pt-12 pb-6 md:pb-8 border-b border-border">
+          <div className="px-4 sm:px-6 md:px-8 pt-8 md:pt-12 pb-6 md:pb-8  ">
             <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>
               <p className="text-xs font-semibold text-muted-foreground tracking-widest uppercase mb-4">My Projects</p>
               <h2 className="text-3xl font-bold text-foreground">{currentProject.title}</h2>
@@ -109,8 +124,8 @@ export default function ProjectShowcase() {
                 <div className="relative px-4 py-3">
                   <motion.div
                     className={`text-lg font-medium transition-colors duration-300 ${selectedProject === index
-                        ? "text-foreground"
-                        : "text-muted-foreground group-hover:text-foreground"
+                      ? "text-foreground"
+                      : "text-muted-foreground group-hover:text-foreground"
                       }`}
                     animate={{
                       color: selectedProject === index ? "rgb(var(--foreground))" : "rgb(var(--muted-foreground))",
@@ -227,7 +242,7 @@ export default function ProjectShowcase() {
       </motion.div>
 
       {/* Right side - Project Card */}
-      <motion.div className="flex flex-col">
+      <motion.div className="relative z-10 flex flex-col">
         <AnimatePresence mode="wait">
           <motion.div
             key={currentProject.id}

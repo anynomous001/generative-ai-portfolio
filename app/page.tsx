@@ -70,7 +70,7 @@ export default function HomePage() {
   return (
     <>
       {/* <PageBg variant="contact" /> */}
-      <PageBg variant="stripe" />
+      <PageBg variant="about" />
 
       <Section>
         <div className="relative">
@@ -213,16 +213,556 @@ export default function HomePage() {
         <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background via-background/80 to-transparent pointer-events-none"></div>
       </Section>
 
+      {/* about section */}
+      <div className="relative bg-oklch(0.145 0 0) overflow-hidden">
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            zIndex: 0,
+            background: `
+        repeating-linear-gradient(
+          to right,
+          rgba(255,255,255,0.03) 0px,
+          rgba(255,255,255,0.03) 1px,
+          transparent 1px,
+          transparent 100px
+        )
+      `
+          }}
+        />
+
+        <Section>
+          <div className="">
+            <motion.div
+              initial={{ opacity: 0, x: 40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              viewport={{ once: true }}
+            >
+              <h1
+                className="font-sans font-semibold mb-8 text-5xl sm:text-5xl md:text-6xl lg:text-[75px] leading-[1.05] tracking-tight flex items-center justify-center md:justify-start text-center md:text-left"
+                style={{
+                  background: "linear-gradient(90deg,#202020 10%,#c6c6c6 50%,#202020 90%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  color: "transparent"
+                }}
+              >
+                About <span className="ml-1 font-bold"
+                  style={{
+                    background: "linear-gradient(90deg,#ededed 20%,#515151 100%)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                    color: "transparent"
+                  }}
+                > Me</span>
+              </h1>
+
+              <p className="mt-4 text-muted-foreground font-extralight text-base md:text-lg leading-7 md:leading-9">
+                Hey there! I'm{" "}
+                <span className="relative inline-block group cursor-default">
+                  <span className="relative z-10 text-foreground font-normal">Pritam Chakroborty</span>
+                  <motion.span
+                    className="absolute bottom-0 left-0 h-[2px] bg-gradient-to-r from-blue-500 to-cyan-400"
+                    initial={{ width: 0 }}
+                    whileInView={{ width: "100%" }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                    viewport={{ once: true }}
+                  />
+                </span>
+                , a{" "}
+                <span className="relative inline-block group cursor-default">
+                  <span className="relative z-10 text-foreground font-normal">Fullstack Generative AI Developer</span>
+                  <motion.span
+                    className="absolute bottom-0 left-0 h-[2px] bg-gradient-to-r from-purple-500 to-pink-400"
+                    initial={{ width: 0 }}
+                    whileInView={{ width: "100%" }}
+                    transition={{ duration: 0.8, delay: 0.4 }}
+                    viewport={{ once: true }}
+                  />
+                </span>{" "}
+                from Kolkata, India — a computer science student turned{" "}
+                <span className="relative inline-block group cursor-default">
+                  <span className="relative z-10 text-foreground font-normal">self-taught builder</span>
+                  <motion.span
+                    className="absolute bottom-0 left-0 h-[2px] bg-gradient-to-r from-green-500 to-emerald-400"
+                    initial={{ width: 0 }}
+                    whileInView={{ width: "100%" }}
+                    transition={{ duration: 0.8, delay: 0.6 }}
+                    viewport={{ once: true }}
+                  />
+                </span>{" "}
+                with an endless curiosity for{" "}
+                <span className="relative inline-block group cursor-default">
+                  <span className="relative z-10 text-foreground font-normal">all things AI</span>
+                  <motion.span
+                    className="absolute bottom-0 left-0 h-[2px] bg-gradient-to-r from-orange-500 to-red-400"
+                    initial={{ width: 0 }}
+                    whileInView={{ width: "100%" }}
+                    transition={{ duration: 0.8, delay: 0.8 }}
+                    viewport={{ once: true }}
+                  />
+                </span>
+                .
+                <br />From experimenting with the latest{" "}
+                <span className="relative inline-block group cursor-default">
+                  <span className="relative z-10 text-foreground font-normal">Generative AI breakthroughs</span>
+                  <motion.span
+                    className="absolute bottom-0 left-0 h-[2px] bg-gradient-to-r from-indigo-500 to-blue-400"
+                    initial={{ width: 0 }}
+                    whileInView={{ width: "100%" }}
+                    transition={{ duration: 0.8, delay: 1.0 }}
+                    viewport={{ once: true }}
+                  />
+                </span>{" "}
+                to setting up backend systems from scratch, I love staying at the{" "}
+                <span className="relative inline-block group cursor-default">
+                  <span className="relative z-10 text-foreground font-normal">cutting edge</span>
+                  <motion.span
+                    className="absolute bottom-0 left-0 h-[2px] bg-gradient-to-r from-yellow-500 to-amber-400"
+                    initial={{ width: 0 }}
+                    whileInView={{ width: "100%" }}
+                    transition={{ duration: 0.8, delay: 1.2 }}
+                    viewport={{ once: true }}
+                  />
+                </span>
+                . With AI evolving at lightning speed, adaptability isn’t a skill — it’s survival.
+                <br />
+                I help individuals and businesses stay ahead of the curve — whether it’s{" "}
+                <span className="relative inline-block group cursor-default">
+                  <span className="relative z-10 text-foreground font-normal">automating workflows</span>
+                  <motion.span
+                    className="absolute bottom-0 left-0 h-[2px] bg-gradient-to-r from-teal-500 to-cyan-400"
+                    initial={{ width: 0 }}
+                    whileInView={{ width: "100%" }}
+                    transition={{ duration: 0.8, delay: 1.4 }}
+                    viewport={{ once: true }}
+                  />
+                </span>
+                ,{" "}
+                <span className="relative inline-block group cursor-default">
+                  <span className="relative z-10 text-foreground font-normal">optimizing systems</span>
+                  <motion.span
+                    className="absolute bottom-0 left-0 h-[2px] bg-gradient-to-r from-rose-500 to-pink-400"
+                    initial={{ width: 0 }}
+                    whileInView={{ width: "100%" }}
+                    transition={{ duration: 0.8, delay: 1.6 }}
+                    viewport={{ once: true }}
+                  />
+                </span>
+                , or building{" "}
+                <span className="relative inline-block group cursor-default">
+                  <span className="relative z-10 text-foreground font-normal">AI-driven products</span>
+                  <motion.span
+                    className="absolute bottom-0 left-0 h-[2px] bg-gradient-to-r from-violet-500 to-purple-400"
+                    initial={{ width: 0 }}
+                    whileInView={{ width: "100%" }}
+                    transition={{ duration: 0.8, delay: 1.8 }}
+                    viewport={{ once: true }}
+                  />
+                </span>
+                . My recent creation,{" "}
+                <span className="relative inline-block group cursor-default">
+                  <span className="relative z-10 text-foreground font-normal">Prep-Piper</span>
+                  <motion.span
+                    className="absolute bottom-0 left-0 h-[2px] bg-gradient-to-r from-sky-500 to-blue-400"
+                    initial={{ width: 0 }}
+                    whileInView={{ width: "100%" }}
+                    transition={{ duration: 0.8, delay: 2.0 }}
+                    viewport={{ once: true }}
+                  />
+                </span>
+                , uses AI agents to streamline mock interviews and deliver feedback — redefining how interview prep works.
+                <br />
+                Outside of code, you’ll find me{" "}
+                <span className="relative inline-block group cursor-default">
+                  <span className="relative z-10 text-foreground font-normal">writing blogs</span>
+                  <motion.span
+                    className="absolute bottom-0 left-0 h-[2px] bg-gradient-to-r from-lime-500 to-green-400"
+                    initial={{ width: 0 }}
+                    whileInView={{ width: "100%" }}
+                    transition={{ duration: 0.8, delay: 2.2 }}
+                    viewport={{ once: true }}
+                  />
+                </span>{" "}
+                about my learnings, exploring new ideas, or recharging with a{" "}
+                <span className="relative inline-block group cursor-default">
+                  <span className="relative z-10 text-foreground font-normal">good book or movie</span>
+                  <motion.span
+                    className="absolute bottom-0 left-0 h-[2px] bg-gradient-to-r from-amber-500 to-orange-400"
+                    initial={{ width: 0 }}
+                    whileInView={{ width: "100%" }}
+                    transition={{ duration: 0.8, delay: 2.4 }}
+                    viewport={{ once: true }}
+                  />
+                </span>
+                . Always curious. Always building. Always learning.
+              </p>
 
 
+
+
+            </motion.div>
+          </div>
+        </Section>
+      </div>
+      {/* Skill Pills with Animated Hover */}
+      {/* Tech Stack Section */}
+      <div className="relative bg-oklch(0.145 0 0) overflow-hidden">
+
+        <PageBg variant="stripe" />
+
+        <Section>
+          {/* Smoother curved top blend */}
+          <div
+            aria-hidden
+            className="absolute inset-0 pointer-events-none z-10"
+            style={{
+              clipPath: "ellipse(100% 100% at 40% 40%)",
+              background: "linear-gradient(to bottom, color-mix(in oklch, #0A0A0A 100%, transparent) 0%, color-mix(in oklch, #0A0A0A 80%, transparent) 10%, transparent 32%)",
+              opacity: 1,
+            }}
+          />
+
+          <div className="">
+            <motion.div
+              initial={{ opacity: 0, x: 40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              viewport={{ once: true }}
+            >
+              <h1
+                className="font-sans font-semibold text-5xl sm:text-5xl md:text-6xl lg:text-[75px] leading-[1.05] tracking-tight flex items-center justify-center md:justify-start text-center md:text-left"
+                style={{
+                  background: "linear-gradient(90deg,#202020 10%,#c6c6c6 50%,#202020 90%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  color: "transparent"
+                }}
+              >
+                My <span className=" font-bold"
+                  style={{
+                    background: "linear-gradient(90deg,#ededed 20%,#515151 100%)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                    color: "transparent"
+                  }}
+                >Arsenal</span>
+              </h1>
+
+              <p className="mt-4 text-muted-foreground font-extralight text-base md:text-lg leading-7 md:leading-9">
+                My toolkit evolves with every project — from crafting{" "}
+                <span className="relative inline-block group cursor-default">
+                  <span className="relative z-10 text-foreground font-normal">seamless user interfaces</span>
+                  <motion.span
+                    className="absolute bottom-0 left-0 h-[2px] bg-gradient-to-r from-blue-500 to-cyan-400"
+                    initial={{ width: 0 }}
+                    whileInView={{ width: "100%" }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                    viewport={{ once: true }}
+                  />
+                </span>{" "}
+                to building{" "}
+                <span className="relative inline-block group cursor-default">
+                  <span className="relative z-10 text-foreground font-normal">intelligent backend systems</span>
+                  <motion.span
+                    className="absolute bottom-0 left-0 h-[2px] bg-gradient-to-r from-purple-500 to-pink-400"
+                    initial={{ width: 0 }}
+                    whileInView={{ width: "100%" }}
+                    transition={{ duration: 0.8, delay: 0.4 }}
+                    viewport={{ once: true }}
+                  />
+                </span>{" "}
+                and deploying{" "}
+                <span className="relative inline-block group cursor-default">
+                  <span className="relative z-10 text-foreground font-normal">production-grade AI workflows</span>
+                  <motion.span
+                    className="absolute bottom-0 left-0 h-[2px] bg-gradient-to-r from-green-500 to-emerald-400"
+                    initial={{ width: 0 }}
+                    whileInView={{ width: "100%" }}
+                    transition={{ duration: 0.8, delay: 0.6 }}
+                    viewport={{ once: true }}
+                  />
+                </span>
+                . These are the tools I wield to bring ideas to life.
+              </p>
+
+              {/* Tech Stack Grid */}
+              <div className="mt-10 space-y-8">
+
+
+
+                {/* Languages */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6 }}
+                  viewport={{ once: true }}
+                >
+                  <h3 className="text-sm font-medium text-muted-foreground mb-3 tracking-wider uppercase">
+                    Languages
+                  </h3>
+                  <ul className="flex flex-wrap gap-3">
+                    {[
+                      { name: "JavaScript", gradient: "linear-gradient(135deg, rgba(234, 179, 8, 0.15), rgba(250, 204, 21, 0.15))" },
+                      { name: "Python", gradient: "linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(96, 165, 250, 0.15))" },
+                      { name: "TypeScript", gradient: "linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(34, 211, 238, 0.15))" },
+                    ].map((tech, i) => (
+                      <motion.li
+                        key={tech.name}
+                        initial={{ opacity: 0, scale: 0.8 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{ delay: i * 0.1, duration: 0.5 }}
+                        viewport={{ once: true }}
+                        whileHover={{
+                          scale: 1.1,
+                          background: tech.gradient
+                        }}
+                        transition={{ type: "spring", stiffness: 300 }}
+                        style={{
+                          backdropFilter: "blur(6px)",
+                        }}
+                        className="rounded-full border border-white/10 bg-white/5 px-5 py-2 text-sm text-muted-foreground hover:text-white cursor-default select-none"
+                      >
+                        {tech.name}
+                      </motion.li>
+                    ))}
+                  </ul>
+                </motion.div>
+
+                {/* Grid Container for Multi-Column Layout */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  {/* Frontend */}
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.1 }}
+                    viewport={{ once: true }}
+                  >
+                    <h3 className="text-sm font-medium text-muted-foreground mb-3 tracking-wider uppercase">
+                      Frontend
+                    </h3>
+                    <ul className="flex flex-wrap gap-3">
+                      {[
+                        { name: "React", gradient: "linear-gradient(135deg, rgba(34, 211, 238, 0.15), rgba(96, 165, 250, 0.15))" },
+                        { name: "Next.js", gradient: "linear-gradient(135deg, rgba(148, 163, 184, 0.15), rgba(203, 213, 225, 0.15))" },
+                        { name: "TypeScript", gradient: "linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(34, 211, 238, 0.15))" },
+                        { name: "Tailwind CSS", gradient: "linear-gradient(135deg, rgba(20, 184, 166, 0.15), rgba(34, 211, 238, 0.15))" },
+                      ].map((tech, i) => (
+                        <motion.li
+                          key={tech.name}
+                          initial={{ opacity: 0, scale: 0.8 }}
+                          whileInView={{ opacity: 1, scale: 1 }}
+                          transition={{ delay: i * 0.1, duration: 0.5 }}
+                          viewport={{ once: true }}
+                          whileHover={{
+                            scale: 1.1,
+                            background: tech.gradient
+                          }}
+                          transition={{ type: "spring", stiffness: 300 }}
+                          style={{
+                            backdropFilter: "blur(6px)",
+                          }}
+                          className="rounded-full border border-white/10 bg-white/5 px-5 py-2 text-sm text-muted-foreground hover:text-white cursor-default select-none"
+                        >
+                          {tech.name}
+                        </motion.li>
+                      ))}
+                    </ul>
+                  </motion.div>
+
+                  {/* Backend */}
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.2 }}
+                    viewport={{ once: true }}
+                  >
+                    <h3 className="text-sm font-medium text-muted-foreground mb-3 tracking-wider uppercase">
+                      Backend
+                    </h3>
+                    <ul className="flex flex-wrap gap-3">
+                      {[
+                        { name: "Node.js", gradient: "linear-gradient(135deg, rgba(34, 197, 94, 0.15), rgba(52, 211, 153, 0.15))" },
+                        { name: "Express", gradient: "linear-gradient(135deg, rgba(148, 163, 184, 0.15), rgba(203, 213, 225, 0.15))" },
+                      ].map((tech, i) => (
+                        <motion.li
+                          key={tech.name}
+                          initial={{ opacity: 0, scale: 0.8 }}
+                          whileInView={{ opacity: 1, scale: 1 }}
+                          transition={{ delay: i * 0.1, duration: 0.5 }}
+                          viewport={{ once: true }}
+                          whileHover={{
+                            scale: 1.1,
+                            background: tech.gradient
+                          }}
+                          transition={{ type: "spring", stiffness: 300 }}
+                          style={{
+                            backdropFilter: "blur(6px)",
+                          }}
+                          className="rounded-full border border-white/10 bg-white/5 px-5 py-2 text-sm text-muted-foreground hover:text-white cursor-default select-none"
+                        >
+                          {tech.name}
+                        </motion.li>
+                      ))}
+                    </ul>
+                  </motion.div>
+
+                  {/* Database & Infrastructure */}
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.3 }}
+                    viewport={{ once: true }}
+                  >
+                    <h3 className="text-sm font-medium text-muted-foreground mb-3 tracking-wider uppercase">
+                      Database & Infrastructure
+                    </h3>
+                    <ul className="flex flex-wrap gap-3">
+                      {[
+                        { name: "PostgreSQL", gradient: "linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(96, 165, 250, 0.15))" },
+                        { name: "Prisma", gradient: "linear-gradient(135deg, rgba(148, 163, 184, 0.15), rgba(203, 213, 225, 0.15))" },
+                        { name: "Docker", gradient: "linear-gradient(135deg, rgba(34, 211, 238, 0.15), rgba(59, 130, 246, 0.15))" },
+                        { name: "Redis", gradient: "linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(248, 113, 113, 0.15))" },
+                        { name: "Pub/Sub", gradient: "linear-gradient(135deg, rgba(249, 115, 22, 0.15), rgba(251, 146, 60, 0.15))" },
+                      ].map((tech, i) => (
+                        <motion.li
+                          key={tech.name}
+                          initial={{ opacity: 0, scale: 0.8 }}
+                          whileInView={{ opacity: 1, scale: 1 }}
+                          transition={{ delay: i * 0.1, duration: 0.5 }}
+                          viewport={{ once: true }}
+                          whileHover={{
+                            scale: 1.1,
+                            background: tech.gradient
+                          }}
+                          transition={{ type: "spring", stiffness: 300 }}
+                          style={{
+                            backdropFilter: "blur(6px)",
+                          }}
+                          className="rounded-full border border-white/10 bg-white/5 px-5 py-2 text-sm text-muted-foreground hover:text-white cursor-default select-none"
+                        >
+                          {tech.name}
+                        </motion.li>
+                      ))}
+                    </ul>
+                  </motion.div>
+
+                  {/* AI Toolkit */}
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.4 }}
+                    viewport={{ once: true }}
+                  >
+                    <h3 className="text-sm font-medium text-muted-foreground mb-3 tracking-wider uppercase">
+                      AI Toolkit
+                    </h3>
+                    <ul className="flex flex-wrap gap-3">
+                      {[
+                        { name: "LangChain", gradient: "linear-gradient(135deg, rgba(34, 197, 94, 0.15), rgba(52, 211, 153, 0.15))" },
+                        { name: "LangGraph", gradient: "linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(52, 211, 153, 0.15))" },
+                        { name: "Crew AI", gradient: "linear-gradient(135deg, rgba(168, 85, 247, 0.15), rgba(192, 132, 252, 0.15))" },
+                        { name: "Manus AI", gradient: "linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(168, 85, 247, 0.15))" },
+                        { name: "RAG Systems", gradient: "linear-gradient(135deg, rgba(244, 114, 182, 0.15), rgba(251, 146, 188, 0.15))" },
+                        { name: "Agentic Workflows", gradient: "linear-gradient(135deg, rgba(236, 72, 153, 0.15), rgba(244, 114, 182, 0.15))" },
+                      ].map((tech, i) => (
+                        <motion.li
+                          key={tech.name}
+                          initial={{ opacity: 0, scale: 0.8 }}
+                          whileInView={{ opacity: 1, scale: 1 }}
+                          transition={{ delay: i * 0.1, duration: 0.5 }}
+                          viewport={{ once: true }}
+                          whileHover={{
+                            scale: 1.1,
+                            background: tech.gradient
+                          }}
+                          transition={{ type: "spring", stiffness: 300 }}
+                          style={{
+                            backdropFilter: "blur(6px)",
+                          }}
+                          className="rounded-full border border-white/10 bg-white/5 px-5 py-2 text-sm text-muted-foreground hover:text-white cursor-default select-none"
+                        >
+                          {tech.name}
+                        </motion.li>
+                      ))}
+                    </ul>
+                  </motion.div>
+
+                  {/* Specializations */}
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.5 }}
+                    viewport={{ once: true }}
+                  >
+                    <h3 className="text-sm font-medium text-muted-foreground mb-3 tracking-wider uppercase">
+                      Specializations
+                    </h3>
+                    <ul className="flex flex-wrap gap-3">
+                      {[
+                        { name: "Clean UX", gradient: "linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(34, 211, 238, 0.15))" },
+                        { name: "Accessibility", gradient: "linear-gradient(135deg, rgba(34, 197, 94, 0.15), rgba(52, 211, 153, 0.15))" },
+                        { name: "Motion Design", gradient: "linear-gradient(135deg, rgba(168, 85, 247, 0.15), rgba(244, 114, 182, 0.15))" },
+                        { name: "Web Performance", gradient: "linear-gradient(135deg, rgba(249, 115, 22, 0.15), rgba(248, 113, 113, 0.15))" },
+                      ].map((tech, i) => (
+                        <motion.li
+                          key={tech.name}
+                          initial={{ opacity: 0, scale: 0.8 }}
+                          whileInView={{ opacity: 1, scale: 1 }}
+                          transition={{ delay: i * 0.1, duration: 0.5 }}
+                          viewport={{ once: true }}
+                          whileHover={{
+                            scale: 1.1,
+                            background: tech.gradient
+                          }}
+                          transition={{ type: "spring", stiffness: 300 }}
+                          style={{
+                            backdropFilter: "blur(6px)",
+                          }}
+                          className="rounded-full border border-white/10 bg-white/5 px-5 py-2 text-sm text-muted-foreground hover:text-white cursor-default select-none"
+                        >
+                          {tech.name}
+                        </motion.li>
+                      ))}
+                    </ul>
+                  </motion.div>
+                </div>
+              </div>
+
+            </motion.div>
+          </div>
+        </Section>
+      </div>
 
 
       <div className="min-h-[calc(100dvh-64px)]  ">
 
 
 
+
+
         <Section className="relative z-20">
-          <div
+          <h1 className="font-sans font-semibold text-5xl sm:text-5xl md:text-6xl lg:text-[75px] leading-[1.05] tracking-tight flex items-center justify-center md:justify-start text-center md:text-left mt-8"
+            style={{
+              background: "linear-gradient(90deg,#202020 10%,#c6c6c6 50%,#202020 90%)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              color: "transparent"
+            }}
+          >
+            My <span className="ml-1 font-bold"
+              style={{
+                background: "linear-gradient(90deg,#ededed 20%,#515151 100%)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                color: "transparent"
+              }}
+            > Works</span>
+          </h1>
+
+
+          {/* <div
             className="absolute inset-0 pointer-events-none"
             style={{
               zIndex: 0,
@@ -236,11 +776,19 @@ export default function HomePage() {
         )
       `
             }}
-          />
+          /> */}
           {/* <PageBg variant="stripe" /> */}
+          {/* <div
+            aria-hidden
+            className="absolute inset-0 pointer-events-none z-10"
+            style={{
+              clipPath: "ellipse(100% 100% at 40% 40%)",
+              background: "linear-gradient(to bottom, color-mix(in oklch, #0A0A0A 100%, transparent) 0%, color-mix(in oklch, #0A0A0A 80%, transparent) 10%, transparent 22%)",
+              opacity: 1,
+            }}
+          /> */}
 
-
-          <h1 className="font-sans font-semibold text-5xl sm:text-5xl md:text-5xl lg:text-[75px] leading-[1.05] tracking-tight flex items-center justify-center md:justify-start text-center md:text-left"
+          {/* <h1 className="font-sans font-semibold text-5xl sm:text-5xl md:text-5xl lg:text-[75px] leading-[1.05] tracking-tight flex items-center justify-center md:justify-start text-center md:text-left"
             style={{
               background: "linear-gradient(90deg,#202020 10%,#c6c6c6 50%,#202020 90%)",
               WebkitBackgroundClip: "text",
@@ -256,7 +804,7 @@ export default function HomePage() {
                 color: "transparent"
               }}
             > Works</span>
-          </h1>
+          </h1> */}
 
           <ProjectShowcase />
         </Section>
@@ -284,50 +832,27 @@ export default function HomePage() {
 
 
         <Section>
-          <ScrollVelocityContainer className="text-4xl font-bold tracking-[-0.02em] mt-16 md:text-7xl md:leading-[5rem]  border-2 border-white border-solid">
-            <ScrollVelocityRow baseVelocity={20} direction={1}>
-              <h1 className="font-sans pl-6 font-semibold text-5xl sm:text-5xl md:text-6xl lg:text-[75px] leading-[1.05] tracking-tight flex items-center justify-center md:justify-start text-center md:text-left mt-8"
-                style={{
-                  background: "linear-gradient(90deg,#202020 10%,#c6c6c6 50%,#202020 90%)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                  color: "transparent"
-                }}
-              >
-                My <span className="ml-1 font-bold"
-                  style={{
-                    background: "linear-gradient(90deg,#ededed 20%,#515151 100%)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                    color: "transparent"
-                  }}
-                > Experience</span>
-              </h1>
-            </ScrollVelocityRow>
-            <ScrollVelocityRow baseVelocity={20} direction={-1}>
-              <h1 className="font-sans font-semibold pl-6 text-5xl sm:text-5xl md:text-6xl lg:text-[75px] leading-[1.05] tracking-tight flex items-center justify-center md:justify-start text-center md:text-left mt-8"
-                style={{
-                  background: "linear-gradient(90deg,#202020 10%,#c6c6c6 50%,#202020 90%)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                  color: "transparent"
-                }}
-              >
-                My <span className="ml-1 font-bold"
-                  style={{
-                    background: "linear-gradient(90deg,#ededed 20%,#515151 100%)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                    color: "transparent"
-                  }}
-                > Experience</span>
-              </h1>
-            </ScrollVelocityRow>
-          </ScrollVelocityContainer>
+
+          <h1 className="font-sans font-semibold  text-5xl sm:text-5xl md:text-6xl lg:text-[75px] leading-[1.05] tracking-tight flex items-center justify-center md:justify-start text-center md:text-left mt-8"
+            style={{
+              background: "linear-gradient(90deg,#202020 10%,#c6c6c6 50%,#202020 90%)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              color: "transparent"
+            }}
+          >
+            My <span className="ml-1 font-bold"
+              style={{
+                background: "linear-gradient(90deg,#ededed 20%,#515151 100%)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                color: "transparent"
+              }}
+            > Experience</span>
+          </h1>
 
 
-
-          <p className="lead mt-4">A concise look at my professional journey.</p>
+          <p className="lead ">A concise look at my professional journey.</p>
           <div className="mt-8">
             <Timeline items={items} />
           </div>
@@ -335,272 +860,7 @@ export default function HomePage() {
       </div>
 
 
-      {/* about section */}
-      <div className="relative bg-oklch(0.145 0 0) overflow-hidden">
-        <div
-          className="absolute inset-0 pointer-events-none"
-          style={{
-            zIndex: 0,
-            background: `
-        repeating-linear-gradient(
-          to right,
-          rgba(255,255,255,0.03) 0px,
-          rgba(255,255,255,0.03) 1px,
-          transparent 1px,
-          transparent 100px
-        )
-      `
-          }}
-        />
 
-        <Section>
-          {/* Smoother curved top blend */}
-          <div
-            aria-hidden
-            className="absolute inset-0 pointer-events-none z-10"
-            style={{
-              clipPath: "ellipse(100% 100% at 40% 40%)",
-              background: "linear-gradient(to bottom, color-mix(in oklch, #0A0A0A 100%, transparent) 0%, color-mix(in oklch, #0A0A0A 80%, transparent) 10%, transparent 22%)",
-              opacity: 1,
-            }}
-          />
-
-          <div className="">
-            {/* Right: About + Skills */}
-            <motion.div
-              initial={{ opacity: 0, x: 40 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
-              viewport={{ once: true }}
-            >
-              <h1
-                className="font-sans font-semibold text-5xl sm:text-5xl md:text-6xl lg:text-[75px] leading-[1.05] tracking-tight flex items-center justify-center md:justify-start text-center md:text-left"
-                style={{
-                  background: "linear-gradient(90deg,#202020 10%,#c6c6c6 50%,#202020 90%)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                  color: "transparent"
-                }}
-              >
-                About <span className="ml-1 font-bold"
-                  style={{
-                    background: "linear-gradient(90deg,#ededed 20%,#515151 100%)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                    color: "transparent"
-                  }}
-                > Me</span>
-              </h1>
-
-              <p className="mt-4 text-muted-foreground font-extralight text-base md:text-lg leading-7 md:leading-9">
-                I'm a{" "}
-                <span className="relative inline-block group cursor-default">
-                  <span className="relative z-10 text-foreground font-normal">front‑end engineer</span>
-                  <motion.span
-                    className="absolute bottom-0 left-0 h-[2px] bg-gradient-to-r from-blue-500 to-cyan-400"
-                    initial={{ width: 0 }}
-                    whileInView={{ width: "100%" }}
-                    transition={{ duration: 0.8, delay: 0.2 }}
-                    viewport={{ once: true }}
-                  />
-                  <motion.span
-                    className="absolute inset-0 -z-10 rounded"
-                    initial={{ opacity: 0 }}
-                    whileHover={{ opacity: 1 }}
-                    style={{
-                      background: "linear-gradient(90deg, rgba(59, 130, 246, 0.1), rgba(34, 211, 238, 0.1))",
-                    }}
-                  />
-                </span>{" "}
-                focused on{" "}
-                <span className="relative inline-block group cursor-default">
-                  <span className="relative z-10 text-foreground font-normal">motion</span>
-                  <motion.span
-                    className="absolute bottom-0 left-0 h-[2px] bg-gradient-to-r from-purple-500 to-pink-400"
-                    initial={{ width: 0 }}
-                    whileInView={{ width: "100%" }}
-                    transition={{ duration: 0.8, delay: 0.4 }}
-                    viewport={{ once: true }}
-                  />
-                  <motion.span
-                    className="absolute inset-0 -z-10 rounded"
-                    initial={{ opacity: 0 }}
-                    whileHover={{ opacity: 1 }}
-                    style={{
-                      background: "linear-gradient(90deg, rgba(168, 85, 247, 0.1), rgba(244, 114, 182, 0.1))",
-                    }}
-                  />
-                </span>
-                ,{" "}
-                <span className="relative inline-block group cursor-default">
-                  <span className="relative z-10 text-foreground font-normal">accessibility</span>
-                  <motion.span
-                    className="absolute bottom-0 left-0 h-[2px] bg-gradient-to-r from-green-500 to-emerald-400"
-                    initial={{ width: 0 }}
-                    whileInView={{ width: "100%" }}
-                    transition={{ duration: 0.8, delay: 0.6 }}
-                    viewport={{ once: true }}
-                  />
-                  <motion.span
-                    className="absolute inset-0 -z-10 rounded"
-                    initial={{ opacity: 0 }}
-                    whileHover={{ opacity: 1 }}
-                    style={{
-                      background: "linear-gradient(90deg, rgba(34, 197, 94, 0.1), rgba(52, 211, 153, 0.1))",
-                    }}
-                  />
-                </span>
-                , and{" "}
-                <span className="relative inline-block group cursor-default">
-                  <span className="relative z-10 text-foreground font-normal">performance</span>
-                  <motion.span
-                    className="absolute bottom-0 left-0 h-[2px] bg-gradient-to-r from-orange-500 to-red-400"
-                    initial={{ width: 0 }}
-                    whileInView={{ width: "100%" }}
-                    transition={{ duration: 0.8, delay: 0.8 }}
-                    viewport={{ once: true }}
-                  />
-                  <motion.span
-                    className="absolute inset-0 -z-10 rounded"
-                    initial={{ opacity: 0 }}
-                    whileHover={{ opacity: 1 }}
-                    style={{
-                      background: "linear-gradient(90deg, rgba(249, 115, 22, 0.1), rgba(248, 113, 113, 0.1))",
-                    }}
-                  />
-                </span>
-                . I love crafting{" "}
-                <span className="relative inline-block group cursor-default">
-                  <span className="relative z-10 text-foreground font-normal">immersive</span>
-                  <motion.span
-                    className="absolute bottom-0 left-0 h-[2px] bg-gradient-to-r from-indigo-500 to-blue-400"
-                    initial={{ width: 0 }}
-                    whileInView={{ width: "100%" }}
-                    transition={{ duration: 0.8, delay: 1.0 }}
-                    viewport={{ once: true }}
-                  />
-                  <motion.span
-                    className="absolute inset-0 -z-10 rounded"
-                    initial={{ opacity: 0 }}
-                    whileHover={{ opacity: 1 }}
-                    style={{
-                      background: "linear-gradient(90deg, rgba(99, 102, 241, 0.1), rgba(96, 165, 250, 0.1))",
-                    }}
-                  />
-                </span>
-                ,{" "}
-                <span className="relative inline-block group cursor-default">
-                  <span className="relative z-10 text-foreground font-normal">minimal web experiences</span>
-                  <motion.span
-                    className="absolute bottom-0 left-0 h-[2px] bg-gradient-to-r from-yellow-500 to-amber-400"
-                    initial={{ width: 0 }}
-                    whileInView={{ width: "100%" }}
-                    transition={{ duration: 0.8, delay: 1.2 }}
-                    viewport={{ once: true }}
-                  />
-                  <motion.span
-                    className="absolute inset-0 -z-10 rounded"
-                    initial={{ opacity: 0 }}
-                    whileHover={{ opacity: 1 }}
-                    style={{
-                      background: "linear-gradient(90deg, rgba(234, 179, 8, 0.1), rgba(251, 191, 36, 0.1))",
-                    }}
-                  />
-                </span>{" "}
-                that feel{" "}
-                <span className="relative inline-block group cursor-default">
-                  <span className="relative z-10 text-foreground font-normal">fast</span>
-                  <motion.span
-                    className="absolute bottom-0 left-0 h-[2px] bg-gradient-to-r from-rose-500 to-pink-400"
-                    initial={{ width: 0 }}
-                    whileInView={{ width: "100%" }}
-                    transition={{ duration: 0.8, delay: 1.4 }}
-                    viewport={{ once: true }}
-                  />
-                  <motion.span
-                    className="absolute inset-0 -z-10 rounded"
-                    initial={{ opacity: 0 }}
-                    whileHover={{ opacity: 1 }}
-                    style={{
-                      background: "linear-gradient(90deg, rgba(244, 63, 94, 0.1), rgba(244, 114, 182, 0.1))",
-                    }}
-                  />
-                </span>
-                ,{" "}
-                <span className="relative inline-block group cursor-default">
-                  <span className="relative z-10 text-foreground font-normal">responsive</span>
-                  <motion.span
-                    className="absolute bottom-0 left-0 h-[2px] bg-gradient-to-r from-teal-500 to-cyan-400"
-                    initial={{ width: 0 }}
-                    whileInView={{ width: "100%" }}
-                    transition={{ duration: 0.8, delay: 1.6 }}
-                    viewport={{ once: true }}
-                  />
-                  <motion.span
-                    className="absolute inset-0 -z-10 rounded"
-                    initial={{ opacity: 0 }}
-                    whileHover={{ opacity: 1 }}
-                    style={{
-                      background: "linear-gradient(90deg, rgba(20, 184, 166, 0.1), rgba(34, 211, 238, 0.1))",
-                    }}
-                  />
-                </span>
-                , and{" "}
-                <span className="relative inline-block group cursor-default">
-                  <span className="relative z-10 text-foreground font-normal">elegant</span>
-                  <motion.span
-                    className="absolute bottom-0 left-0 h-[2px] bg-gradient-to-r from-violet-500 to-purple-400"
-                    initial={{ width: 0 }}
-                    whileInView={{ width: "100%" }}
-                    transition={{ duration: 0.8, delay: 1.8 }}
-                    viewport={{ once: true }}
-                  />
-                  <motion.span
-                    className="absolute inset-0 -z-10 rounded"
-                    initial={{ opacity: 0 }}
-                    whileHover={{ opacity: 1 }}
-                    style={{
-                      background: "linear-gradient(90deg, rgba(139, 92, 246, 0.1), rgba(168, 85, 247, 0.1))",
-                    }}
-                  />
-                </span>
-                .
-              </p>
-
-              {/* Skill Pills with Animated Hover */}
-              <ul className="mt-6 flex flex-wrap gap-3">
-                {[
-                  { name: "Clean UX", gradient: "linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(34, 211, 238, 0.15))" },
-                  { name: "Accessibility", gradient: "linear-gradient(135deg, rgba(34, 197, 94, 0.15), rgba(52, 211, 153, 0.15))" },
-                  { name: "Motion Design", gradient: "linear-gradient(135deg, rgba(168, 85, 247, 0.15), rgba(244, 114, 182, 0.15))" },
-                  { name: "Web Perf", gradient: "linear-gradient(135deg, rgba(249, 115, 22, 0.15), rgba(248, 113, 113, 0.15))" },
-                  { name: "React/Next.js", gradient: "linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(96, 165, 250, 0.15))" },
-                  { name: "Tailwind CSS", gradient: "linear-gradient(135deg, rgba(20, 184, 166, 0.15), rgba(34, 211, 238, 0.15))" },
-                ].map((skill, i) => (
-                  <motion.li
-                    key={skill.name}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ delay: i * 0.1, duration: 0.5 }}
-                    viewport={{ once: true }}
-                    whileHover={{
-                      scale: 1.1,
-                      background: skill.gradient
-                    }}
-                    transition={{ type: "spring", stiffness: 300 }}
-                    style={{
-                      backdropFilter: "blur(6px)",
-                    }}
-                    className="rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs text-muted-foreground hover:text-white cursor-default select-none"
-                  >
-                    {skill.name}
-                  </motion.li>
-                ))}
-              </ul>
-            </motion.div>
-          </div>
-        </Section>
-      </div>
 
 
       <div className="relative overflow-hidden ">

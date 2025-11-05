@@ -116,9 +116,12 @@
   --color-sidebar-ring: var(--sidebar-ring);
 
   /* Brand system: 1 primary + 2 accents + neutrals (3-5 colors total) */
-  --brand-primary: oklch(0.68 0.14 250); /* electric blue */
-  --brand-accent: oklch(0.64 0.18 310); /* violet */
-  --brand-green: oklch(0.7 0.15 150); /* teal-green */
+  --brand-primary: oklch(0.68 0.14 250);
+  /* electric blue */
+  --brand-accent: oklch(0.64 0.18 310);
+  /* violet */
+  --brand-green: oklch(0.7 0.15 150);
+  /* teal-green */
 
   --brand-bg: var(--background);
   --brand-fg: var(--foreground);
@@ -132,6 +135,7 @@
 .h2 {
   @apply text-3xl md:text-4xl font-semibold;
 }
+
 .lead {
   @apply text-base md:text-lg text-muted-foreground leading-relaxed;
 }
@@ -145,11 +149,14 @@
   color: transparent;
   animation: chroma-shift 10s ease-in-out infinite;
 }
+
 @keyframes chroma-shift {
+
   0%,
   100% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
@@ -157,20 +164,20 @@
 
 /* Animated stripe backdrop (hero) */
 .bg-moving-stripes {
-  background-image: repeating-linear-gradient(
-    -15deg,
-    color-mix(in oklch, var(--brand-primary) 25%, transparent),
-    color-mix(in oklch, var(--brand-primary) 25%, transparent) 2px,
-    transparent 2px,
-    transparent 12px
-  );
+  background-image: repeating-linear-gradient(-15deg,
+      color-mix(in oklch, var(--brand-primary) 25%, transparent),
+      color-mix(in oklch, var(--brand-primary) 25%, transparent) 2px,
+      transparent 2px,
+      transparent 12px);
   animation: stripes-move 16s linear infinite;
   opacity: 0.35;
 }
+
 @keyframes stripes-move {
   from {
     background-position: 0 0;
   }
+
   to {
     background-position: 2000px 0;
   }
@@ -199,6 +206,7 @@
 .btn-gradient {
   position: relative;
 }
+
 .btn-gradient::before {
   content: "";
   position: absolute;
@@ -207,7 +215,8 @@
   background: linear-gradient(120deg, var(--brand-primary), var(--brand-accent), var(--brand-green));
   z-index: 0;
 }
-.btn-gradient > span {
+
+.btn-gradient>span {
   position: relative;
   z-index: 1;
   @apply bg-background rounded-[calc(var(--radius-lg)-2px)];
@@ -218,6 +227,7 @@
   .text-chroma {
     animation: none;
   }
+
   .bg-moving-stripes {
     animation: none;
   }
@@ -232,7 +242,31 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+}
+
+
+
+
+.grid-ray-effect {
+  position: relative;
+  overflow: visible;
+}
+
+.grid-ray-effect::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 30%;
+  /* Align with the end of left menu bar */
+  width: 70%;
+  height: 100%;
+  pointer-events: none;
+  background: radial-gradient(circle at left center, var(--glass-color) 0%, transparent 80%);
+  opacity: 0.15;
+  z-index: 5;
+  filter: blur(50px);
 }
