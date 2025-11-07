@@ -11,55 +11,66 @@ interface Project {
   image: string
   color: string
   glassColor: string
+  skills: string[]
 }
 
 const projects: Project[] = [
   {
     id: 1,
-    title: "Skiper OSS 001",
-    description: `Lorem ipsum dolor sit amet architecto blanditiis dolorum voluptatem. Aliquam, error. Atque aspernatur laboriosam corporis? A, at obcaecati!Eveniet nesciunt voluptatibus officiis exercitationem pariatur optio dolorum modi, aut dolore vitae quia, quisquam repudiandae ullam blanditiis sed distinctio adipisci dolores, facere tempore similique. Beatae enim ipsum ad ea architecto.
-   ate nam repelleaperiam ea. Ratione nostrum commodi similique veniam`,
+    title: "Prep Piper AI Interview Assistant",
+    description: `Prep Piper is a comprehensive AI-powered interview preparation platform designed to transform how candidates prepare for job interviews. It leverages advanced AI agents to conduct realistic mock interviews, analyze performance in real-time, and deliver personalized feedback tailored to each user's strengths and weaknesses. The platform features intelligent question generation across multiple domains and difficulty levels, simulating authentic interview scenarios. Users benefit from real-time feedback during mock sessions, detailed performance analytics, personalized coaching recommendations, conversation analysis with sentiment tracking, and curated resources for skill improvement. With adaptive learning paths that adjust based on performance, Prep Piper helps candidates build confidence, refine their communication skills, and master technical concepts—ensuring they're fully prepared to ace their dream job interviews.`,
     image: "/images/Prep-piper.jpg",
     color: "from-blue-600 to-cyan-400",
-    glassColor: "rgba(59, 130, 246, 0.08)", // blue glass
+    glassColor: "rgba(59, 130, 246, 0.08)",
+    skills: ["React", "Next.js", "AI SDK", "TypeScript", "LangChain"],
   },
   {
     id: 2,
-    title: "NeonSync Pro",
-    description: `Lorem ipsum dolor sit amet architecto blanditiis dolorum voluptatem. Aliquam, error. Atque aspernatur laboriosam corporis? A, at obcaecati!Eveniet nesciunt voluptatibus officiis exercitationem pariatur optio dolorum modi, aut dolore vitae quia, quisquam repudiandae ullam blanditiis sed distinctio adipisci dolores, facere tempore similique. Beatae enim ipsum ad ea architecto.
-   ate nam repelleaperiam ea. Ratione nostrum commodi similique veniam`,
+    title: "Zapier Automation",
+    description: `A robust enterprise-grade automation system built with Next.js and Node.js, leveraging Apache Kafka for event streaming and message queues. Features include webhook integrations, Prisma ORM with PostgreSQL for data persistence, and JWT authentication for secure API access. The system handles high-throughput data processing with real-time event handling and automated workflow orchestration.`,
     image: "/images/zapier.jpg",
     color: "from-purple-600 to-pink-400",
-    glassColor: "rgba(168, 85, 247, 0.08)", // purple glass
+    glassColor: "rgba(168, 85, 247, 0.08)",
+    skills: ["Next.js", "Node.js", "Apache Kafka", "PostgreSQL", "Prisma", "JWT"],
   },
   {
     id: 3,
-    title: "PixelForge Studio",
-    description: `Lorem ipsum dolor sit amet architecto blanditiis dolorum voluptatem. Aliquam, error. Atque aspernatur laboriosam corporis? A, at obcaecati!Eveniet nesciunt voluptatibus officiis exercitationem pariatur optio dolorum modi, aut dolore vitae quia, quisquam repudiandae ullam blanditiis sed distinctio adipisci dolores, facere tempore similique. Beatae enim ipsum ad ea architecto.
-   ate nam repelleaperiam ea. Ratione nostrum commodi similique veniam`,
+    title: "PlayTM Demo App",
+    description: `A light replica of how Paytm works, featuring digital wallet functionality including adding money to your wallet, sending money to friends, adding beneficiaries, and requesting money from friends. Track your balance and view complete transaction history with an intuitive interface.`,
     image: "/images/playtm.webp",
     color: "from-orange-600 to-red-400",
-    glassColor: "rgba(249, 115, 22, 0.08)", // orange glass
+    glassColor: "rgba(249, 115, 22, 0.08)",
+    skills: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "Tailwind CSS"],
   },
   {
     id: 4,
-    title: "TaskFlow Sonet",
-    description: `Lorem ipsum dolor sit amet architecto blanditiis dolorum voluptatem. Aliquam, error. Atque aspernatur laboriosam corporis? A, at obcaecati!Eveniet nesciunt voluptatibus officiis exercitationem pariatur optio dolorum modi, aut dolore vitae quia, quisquam repudiandae ullam blanditiis sed distinctio adipisci dolores, facere tempore similique. Beatae enim ipsum ad ea architecto.
-   ate nam repelleaperiam ea. Ratione nostrum commodi similique veniam`,
+    title: "Readium",
+    description: `A light replica of how Medium works, featuring blog posting capabilities, favorite marking system, and user profiles. Share your favorite blogs across social media platforms. View all your posts and favorited content in one place with a clean, distraction-free reading experience.`,
     image: "/images/readium.webp",
     color: "from-green-600 to-emerald-400",
-    glassColor: "rgba(34, 197, 94, 0.08)", // green glass
+    glassColor: "rgba(34, 197, 94, 0.08)",
+    skills: ["React", "TypeScript", "PostgreSQL", "Prisma", "Hono"],
   },
   {
     id: 5,
-    title: "CloudVibe Bruh",
-    description: `Lorem ipsum dolor sit amet architecto blanditiis dolorum voluptatem. Aliquam, error. Atque aspernatur laboriosam corporis? A, at obcaecati!Eveniet nesciunt voluptatibus officiis exercitationem pariatur optio dolorum modi, aut dolore vitae quia, quisquam repudiandae ullam blanditiis sed distinctio adipisci dolores, facere tempore similique. Beatae enim ipsum ad ea architecto.
-   ate nam repelleaperiam ea. Ratione nostrum commodi similique veniam`,
+    title: "PictureWhisperAI",
+    description: `An AI-powered image analysis application built with Next.js that allows users to upload images and receive detailed AI-generated descriptions of their content. The application implements rate limiting for API calls and uses OpenAI's API for intelligent image analysis and natural language descriptions.`,
     image: "/images/PictureWhisperAI.webp",
     color: "from-indigo-600 to-blue-400",
-    glassColor: "rgba(99, 102, 241, 0.08)", // indigo glass
+    glassColor: "rgba(99, 102, 241, 0.08)",
+    skills: ["Next.js", "OpenAI API", "TypeScript", "Image Processing", "AI"],
+  },
+  {
+    id: 6,
+    title: "Quizzicle",
+    description: `A quiz platform where you can create your own quizzes and test your knowledge on a variety of topics. Features custom quiz creation, topic categorization, score tracking, and an engaging user interface for both quiz creators and participants.`,
+    image: "/images/quizzicle.webp",
+    color: "from-yellow-600 to-orange-400",
+    glassColor: "rgba(234, 179, 8, 0.08)",
+    skills: ["React", "TypeScript", "Node.js", "MongoDB", "Express"],
   },
 ]
+
 
 export default function ProjectShowcase() {
   const [selectedProject, setSelectedProject] = useState<number>(0)
@@ -296,7 +307,7 @@ export default function ProjectShowcase() {
 
                   {/* Skills Tags */}
                   <ul className="flex flex-wrap gap-3 mb-6">
-                    {["Clean UX", "Accessibility", "Motion Design", "Web Perf", "React/Next.js", "Tailwind CSS"].map(
+                    {currentProject.skills.map(
                       (skill) => (
                         <motion.li
                           key={skill}

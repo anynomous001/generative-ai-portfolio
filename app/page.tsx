@@ -22,6 +22,8 @@ import Stack from "@/components/tech-section/stack"
 import About from "@/components/about-section/about"
 import Contact from "@/components/contact-section/contact"
 import Blog from "@/components/Blog-section/blog"
+import HighlightBg from "@/components/hi-light/hilight_text"
+import HighlightUnderline from "@/components/hi-light/hilight_underline"
 
 const projects = [
   {
@@ -63,13 +65,22 @@ export default function HomePage() {
           <div className="grid gap-10 md:grid-cols-[1.3fr_.7fr] md:items-start relative z-10">
             <div>
               <p className="text-xs tracking-widest text-muted-foreground">PORTFOLIO / 2025</p>
-              {/* <h1 className=" mt-3 leading-[0.9] text-6xl md:text-[5rem] lg:text-[6rem] font-extrabold text-white">
+              {/* <h1 className="font-sans font-semibold  text-5xl md:text-[5rem] lg:text-[6rem]lg:text-[75px] leading-[1.05] tracking-tight flex items-center text-white">
                 <span className="block">Pritam</span>
-                <span className="block text-chroma">Chakroborty</span>
+                <h1 className="font-sans font-semibold  text-5xl md:text-[5rem] lg:text-[6rem]lg:text-[75px] leading-[1.05] tracking-tight flex items-center"
+                  style={{
+                    background: "linear-gradient(90deg, rgba(255,255,255,0.8) 10%, rgba(202,218,232,0.7) 40%, rgba(217,227,233,0.6) 70%, rgba(121,156,210,0.9) 100%)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                    color: "transparent"
+                  }}
+                >
+                  Chakroborty
+                </h1>
               </h1> */}
 
               <h1
-                className="font-sans font-semibold  text-5xl md:text-[5rem] lg:text-[6rem]lg:text-[75px] leading-[1.05] tracking-tight flex items-center"
+                className="font-sans font-semibold  text-5xl md:text-[5rem] lg:text-[6rem]lg:text-[75px] leading-[1.05] tracking-tight flex items-center text-white"
                 style={{
                   background: "linear-gradient(90deg, rgba(185,230,240,0.85) 10%, rgba(234,224,236,0.7) 40%, rgba(255,255,255,0.5) 60%, rgba(180,203,230,0.85) 90%)",
                   WebkitBackgroundClip: "text",
@@ -92,29 +103,24 @@ export default function HomePage() {
               </h1>
 
 
-              {/* <h1 className="font-sans font-semibold  text-6xl md:text-[5rem] lg:text-[6rem]lg:text-[75px] leading-[1.05] tracking-tight flex items-center "
-                style={{
-                  background: "linear-gradient(90deg,#202020 10%,#c6c6c6 50%,#202020 90%)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                  color: "transparent"
-                }}
-              >
-                Pritam  <br />  <span className="ml-1 font-bold"
-                  style={{
-                    background: "linear-gradient(90deg,#ededed 20%,#515151 100%)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                    color: "transparent"
-                  }}
-                > Chakroborty</span>
-              </h1> */}
+
 
               <p className="  mt-6 text-lg md:text-xl lg:text-2xl text-muted-foreground leading-relaxed">
-                Full Stack Generative AI Developer crafting digital experiences at the intersection of{" "}
-                <span className="font-semibold">design</span>, <span className="font-semibold">technology</span>, and{" "}
-                <span className="font-semibold">user experience</span>.
+                <span
+                  style={{
+                    background: "linear-gradient(90deg, #00e4ff, #34d399)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                  }}
+                >
+                  Full Stack Generative AI Developer
+                </span> crafting digital experiences at the intersection of{" "}
+                <HighlightUnderline colorFrom="#00e4ff" colorTo="#0089ff" delay={0.2}>design</HighlightUnderline>,
+                <HighlightUnderline colorFrom=" #22c55e" colorTo="#34d399" delay={0.2}>technology</HighlightUnderline>, and{" "}
+                <HighlightUnderline colorFrom="#ffb100" colorTo="#ff2f00" delay={0.2}>user experience</HighlightUnderline>.
               </p>
+
+
               <div className="mt-6 flex flex-wrap items-center gap-3 text-sm text-muted-foreground">
                 <span className="inline-flex items-center gap-2">
                   <span className="h-2 w-2 rounded-full bg-emerald-500" aria-hidden />
@@ -126,7 +132,7 @@ export default function HomePage() {
               <div className="mt-8 flex flex-wrap items-center gap-4">
                 <Link href="/projects" className="btn-gradient rounded-lg p-[1px]">
                   <span className="inline-flex items-center gap-2 px-5 py-3">
-                    View Projects <ArrowRight size={16} />
+                    Resume <ArrowRight size={16} />
                   </span>
                 </Link>
                 <Link
@@ -159,7 +165,7 @@ export default function HomePage() {
               <div className="mt-6 w-full">
                 <p className="text-xs tracking-widest text-muted-foreground dark:text-gray-300">FOCUS</p>
                 <ul className="mt-3 flex flex-wrap gap-2">
-                  {["Next.js", "React", "TypeScript", "LangChain", "LangGraph", "Node.js"].map((tag) => (
+                  {["Next.js", "React", "TypeScript", "LangChain", "LangGraph", "Node.js", "RAG", "Agentic Workflows", "Automation"].map((tag) => (
                     <li
                       key={tag}
                       className="rounded-full border border-black/10 bg-black/5 px-2 py-0.5 text-xs text-black/80 dark:border-white/20 dark:bg-white/10 dark:text-white/80"
@@ -172,10 +178,10 @@ export default function HomePage() {
 
               <div className="mt-6 grid gap-3 grid-cols-1 sm:grid-cols-2 w-full">
                 {[
-                  { label: "GitHub", handle: "@felixmacaspac", href: "https://github.com/your" },
+                  { label: "GitHub", handle: "@anynomous001", href: "https://github.com/anynomous001" },
                   { label: "v0.dev", handle: "@felixmacaspac", href: "https://v0.dev" },
                   { label: "HubSpot Community", handle: "@felixmacaspac", href: "https://community.hubspot.com" },
-                  { label: "LinkedIn", handle: "felixmacaspac", href: "https://linkedin.com/in/your" },
+                  { label: "LinkedIn", handle: "Pritam Chakroborty", href: "https://www.linkedin.com/in/pritamchakroborty/r" },
                 ].map((item) => (
                   <a
                     key={item.label}

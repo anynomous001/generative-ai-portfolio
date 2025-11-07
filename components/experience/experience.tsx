@@ -5,25 +5,25 @@ import Section from '../section'
 
 const items = [
     {
-        company: "Acme Corp",
-        role: "Senior Frontend Engineer",
-        period: "2023 — Present",
+        company: "Chingu",
+        role: "Frontend Developer",
+        period: "Dec 2023 — Mar 2024",
         points: [
-            "Led migration to Next.js App Router and improved CWV by 25%",
-            "Built design system components with accessibility baked in",
-            "Established motion guidelines using Framer Motion",
+            "Built an optimized to-do tracker with real-time collaboration and intuitive task categorization, reducing project completion times by 25%.",
+            "Mentored a team of five developers using Agile methodology, improving delivery predictability by 60%.",
         ],
     },
     {
-        company: "Beta Studio",
-        role: "Frontend Engineer",
-        period: "2021 — 2023",
+        company: "0101 DIGIT ALL",
+        role: "Trainee Full Stack Developer",
+        period: "Feb 2023 — Apr 2023",
         points: [
-            "Developed real-time dashboards and internal tools",
-            "Drove UI performance optimization and bundle reduction",
+            "Developed and deployed a resumeless hiring platform using reusable React components, improving future development speed by 25%.",
+            "Collaborated with senior developers during daily stand-ups, increasing sprint velocity by 30% and reducing bug-related rework by 45%.",
         ],
     },
-]
+];
+
 
 
 const Experience = () => {
