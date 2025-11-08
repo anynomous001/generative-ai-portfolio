@@ -37,8 +37,8 @@ export default function Navbar() {
       <div
         className={`
           backdrop-blur-md border-b border-white/10 transition-all duration-300
-          ${scrolled 
-            ? 'bg-black/20 shadow-lg backdrop-saturate-150' 
+          ${scrolled
+            ? 'bg-black/20 shadow-lg backdrop-saturate-150'
             : 'bg-transparent'
           }
         `}
@@ -52,7 +52,7 @@ export default function Navbar() {
               e.preventDefault()
               router.push('/')
             }} className="text-2xl font-bold">
-              <span className="bg-gradient-to-r from-white to-white/70 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-white to-white/70 bg-clip-text text-transparent">
                 Portfolio
               </span>
             </a>
@@ -78,7 +78,7 @@ export default function Navbar() {
                     {link.label}
                     {active && (
                       <motion.div
-                        className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-white/50 to-white/30 rounded-full"
+                        className="absolute -bottom-1 left-0 right-0 h-0.5 bg-linear-to-r from-white/50 to-white/30 rounded-full"
                         layoutId="activeLink"
                         transition={{ type: "spring", stiffness: 300, damping: 30 }}
                       />
@@ -123,15 +123,15 @@ export function NavbarGlassy() {
       <div
         className={`
           backdrop-blur-xl backdrop-saturate-150 transition-all duration-500 ease-out
-          ${scrolled 
-            ? 'bg-black/30 border-b border-white/20 shadow-2xl shadow-black/20' 
+          ${scrolled
+            ? 'bg-black/30 border-b border-white/20 shadow-2xl shadow-black/20'
             : 'bg-black/10 border-b border-white/5'
           }
         `}
       >
         {/* Glass reflection effect */}
-        <div className="absolute inset-0 bg-gradient-to-r from-white/5 via-transparent to-white/5 pointer-events-none" />
-        
+        <div className="absolute inset-0 bg-linear-to-r from-white/5 via-transparent to-white/5 pointer-events-none" />
+
         <div className="relative container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             {/* Logo with glow effect */}
@@ -140,14 +140,14 @@ export function NavbarGlassy() {
               e.preventDefault()
               router.push('/')
             }} className="group text-2xl font-bold">
-              <span className="bg-gradient-to-r from-white via-white/90 to-white/70 bg-clip-text text-transparent group-hover:from-white group-hover:to-white/80 transition-all duration-300">
+              <span className="bg-linear-to-r from-white via-white/90 to-white/70 bg-clip-text text-transparent group-hover:from-white group-hover:to-white/80 transition-all duration-300">
                 Portfolio
               </span>
-              <div className="h-px bg-gradient-to-r from-transparent via-white/20 to-transparent group-hover:via-white/40 transition-all duration-300" />
+              <div className="h-px bg-linear-to-r from-transparent via-white/20 to-transparent group-hover:via-white/40 transition-all duration-300" />
             </a>
 
             {/* Navigation Links with hover effects */}
-            <div className="hidden md:flex items-center space-x-1">
+            {/* <div className="hidden md:flex items-center space-x-1">
               {links.map((link) => {
                 const active = pathname === link.href
                 return (
@@ -162,8 +162,8 @@ export function NavbarGlassy() {
                     className={`
                       relative px-4 py-2 text-sm font-medium rounded-lg transition-all duration-300
                       hover:bg-white/10 hover:backdrop-blur-sm hover:text-white
-                      ${active 
-                        ? 'text-white bg-white/15 shadow-lg' 
+                      ${active
+                        ? 'text-white bg-white/15 shadow-lg'
                         : 'text-white/70'
                       }
                     `}
@@ -171,7 +171,7 @@ export function NavbarGlassy() {
                     {link.label}
                     {active && (
                       <motion.div
-                        className="absolute inset-0 bg-gradient-to-r from-white/10 via-white/20 to-white/10 rounded-lg border border-white/20"
+                        className="absolute inset-0 bg-linear-to-r from-white/10 via-white/20 to-white/10 rounded-lg border border-white/20"
                         layoutId="activeLinkBg"
                         transition={{ type: "spring", stiffness: 300, damping: 30 }}
                       />
@@ -179,17 +179,17 @@ export function NavbarGlassy() {
                   </a>
                 )
               })}
-            </div>
+            </div> */}
 
             {/* Theme Toggle with glass container */}
-            <div className="flex items-center">
+            {/* <div className="flex items-center">
               <div className={`
                 p-1 rounded-lg transition-all duration-300
                 ${scrolled ? 'bg-white/10 backdrop-blur-sm' : 'bg-transparent'}
               `}>
                 <ThemeToggle />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

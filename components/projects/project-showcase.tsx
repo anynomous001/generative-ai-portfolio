@@ -17,7 +17,7 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: "Prep Piper AI Interview Assistant",
+    title: "Prep Piper AI Interviewer",
     description: `Prep Piper is a comprehensive AI-powered interview preparation platform designed to transform how candidates prepare for job interviews. It leverages advanced AI agents to conduct realistic mock interviews, analyze performance in real-time, and deliver personalized feedback tailored to each user's strengths and weaknesses. The platform features intelligent question generation across multiple domains and difficulty levels, simulating authentic interview scenarios. Users benefit from real-time feedback during mock sessions, detailed performance analytics, personalized coaching recommendations, conversation analysis with sentiment tracking, and curated resources for skill improvement. With adaptive learning paths that adjust based on performance, Prep Piper helps candidates build confidence, refine their communication skills, and master technical concepts—ensuring they're fully prepared to ace their dream job interviews.`,
     image: "/images/Prep-piper.jpg",
     color: "from-blue-600 to-cyan-400",

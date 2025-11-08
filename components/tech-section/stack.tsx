@@ -54,7 +54,7 @@ const Stack = () => {
                             <span className="relative inline-block group cursor-default">
                                 <span className="relative z-10 text-foreground font-normal">seamless user interfaces</span>
                                 <motion.span
-                                    className="absolute bottom-0 left-0 h-[2px] bg-gradient-to-r from-blue-500 to-cyan-400"
+                                    className="absolute bottom-0 left-0 h-[2px] bg-linear-to-r from-blue-500 to-cyan-400"
                                     initial={{ width: 0 }}
                                     whileInView={{ width: "100%" }}
                                     transition={{ duration: 0.8, delay: 0.2 }}
@@ -65,7 +65,7 @@ const Stack = () => {
                             <span className="relative inline-block group cursor-default">
                                 <span className="relative z-10 text-foreground font-normal">intelligent backend systems</span>
                                 <motion.span
-                                    className="absolute bottom-0 left-0 h-[2px] bg-gradient-to-r from-purple-500 to-pink-400"
+                                    className="absolute bottom-0 left-0 h-[2px] bg-linear-to-r from-purple-500 to-pink-400"
                                     initial={{ width: 0 }}
                                     whileInView={{ width: "100%" }}
                                     transition={{ duration: 0.8, delay: 0.4 }}
@@ -76,7 +76,7 @@ const Stack = () => {
                             <span className="relative inline-block group cursor-default">
                                 <span className="relative z-10 text-foreground font-normal">production-grade AI workflows</span>
                                 <motion.span
-                                    className="absolute bottom-0 left-0 h-[2px] bg-gradient-to-r from-green-500 to-emerald-400"
+                                    className="absolute bottom-0 left-0 h-[2px] bg-linear-to-r from-green-500 to-emerald-400"
                                     initial={{ width: 0 }}
                                     whileInView={{ width: "100%" }}
                                     transition={{ duration: 0.8, delay: 0.6 }}
