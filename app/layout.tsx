@@ -7,6 +7,7 @@ import Providers from "@/components/providers"
 import ScrollToTop from "@/components/scroll-to-top"
 import { Suspense } from "react"
 import PageTransition from "@/components/page-transition"
+import PageBackground from "@/components/backgrounds/page-bg"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -37,12 +38,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className={`font-sans ${inter.variable} ${mono.variable}`}>
+    <html lang="en" className="scroll-smooth dark">
+      <body className={`font-sans ${inter.variable} ${mono.variable} bg-background`}>
+        <PageBackground />
           <Suspense fallback={<div>Loading...</div>}>
             <Navbar />
             <main className="min-h-[calc(100dvh-64px)] pt-16">
-            {children}
+              <PageTransition>{children}</PageTransition>
             </main>
             <ScrollToTop />
           </Suspense>

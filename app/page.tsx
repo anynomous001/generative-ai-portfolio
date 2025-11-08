@@ -60,7 +60,12 @@ export default function HomePage() {
       {/* <PageBg variant="contact" /> */}
       <PageBg variant="about" />
 
-      <Section>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
+      >
+        <Section>
         <div className="relative">
           <div className="grid gap-10 md:grid-cols-[1.3fr_.7fr] md:items-start relative z-10">
             <div>
@@ -204,7 +209,7 @@ export default function HomePage() {
 
         <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background via-background/80 to-transparent pointer-events-none"></div>
       </Section>
-
+      </motion.div>
       <Projects />
 
       {/* Tech Stack Section */}

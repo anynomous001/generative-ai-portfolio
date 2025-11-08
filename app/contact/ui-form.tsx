@@ -30,7 +30,7 @@ export default function ContactForm() {
             id="name"
             name="name"
             required
-            className="w-full rounded-lg border border-white/10 bg-black/20 px-3 py-2 outline-none"
+            className="w-full rounded-lg border border-white/10 bg-black/20 px-3 py-2 outline-none transition-all duration-300 focus:border-white/30 hover:border-white/20"
           />
         </div>
         <div>
@@ -42,7 +42,7 @@ export default function ContactForm() {
             type="email"
             name="email"
             required
-            className="w-full rounded-lg border border-white/10 bg-black/20 px-3 py-2 outline-none"
+            className="w-full rounded-lg border border-white/10 bg-black/20 px-3 py-2 outline-none transition-all duration-300 focus:border-white/30 hover:border-white/20"
           />
         </div>
         <div>
@@ -54,7 +54,7 @@ export default function ContactForm() {
             name="message"
             required
             rows={5}
-            className="w-full rounded-lg border border-white/10 bg-black/20 px-3 py-2 outline-none"
+            className="w-full rounded-lg border border-white/10 bg-black/20 px-3 py-2 outline-none transition-all duration-300 focus:border-white/30 hover:border-white/20"
           />
         </div>
 

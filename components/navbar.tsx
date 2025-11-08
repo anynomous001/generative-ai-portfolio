@@ -15,93 +15,9 @@ const links = [
   { href: "/contact", label: "Contact" },
 ]
 
-export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false)
-  const pathname = usePathname()
-  const router = useRouter()
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 50)
-    onScroll()
-    window.addEventListener("scroll", onScroll, { passive: true })
-    return () => window.removeEventListener("scroll", onScroll)
-  }, [])
-
-  return (
-    <motion.nav
-      className="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ type: "spring", stiffness: 100, damping: 20 }}
-    >
-      <div
-        className={`
-          backdrop-blur-md border-b border-white/10 transition-all duration-300
-          ${scrolled 
-            ? 'bg-black/20 shadow-lg backdrop-saturate-150' 
-            : 'bg-transparent'
-          }
-        `}
-      >
-        <div className="container mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            {/* Logo */}
-            <a href="/" onClick={(e) => {
-              // allow modified clicks (open in new tab / ctrl/cmd click)
-              if (e.metaKey || e.ctrlKey || e.shiftKey || (e as any).button === 1) return
-              e.preventDefault()
-              router.push('/')
-            }} className="text-2xl font-bold">
-              <span className="bg-gradient-to-r from-white to-white/70 bg-clip-text text-transparent">
-                Portfolio
-              </span>
-            </a>
-
-            {/* Navigation Links */}
-            <div className="hidden md:flex items-center space-x-8">
-              {links.map((link) => {
-                const active = pathname === link.href
-                return (
-                  <a
-                    key={link.href}
-                    href={link.href}
-                    onClick={(e) => {
-                      if (e.metaKey || e.ctrlKey || e.shiftKey || (e as any).button === 1) return
-                      e.preventDefault()
-                      router.push(link.href)
-                    }}
-                    className={`
-                      relative text-sm font-medium transition-colors duration-200 hover:text-white
-                      ${active ? 'text-white' : 'text-white/70'}
-                    `}
-                  >
-                    {link.label}
-                    {active && (
-                      <motion.div
-                        className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-white/50 to-white/30 rounded-full"
-                        layoutId="activeLink"
-                        transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                      />
-                    )}
-                  </a>
-                )
-              })}
-            </div>
-
-            {/* Theme Toggle */}
-            <div className="flex items-center">
-              <ThemeToggle />
-            </div>
-          </div>
-        </div>
-      </div>
-    </motion.nav>
-  )
-}
-
 // Alternative version with more pronounced glass effect:
 
-export function NavbarGlassy() {
+export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const pathname = usePathname()
   const router = useRouter()
