@@ -117,6 +117,9 @@ export default function ProjectShowcase() {
                   setIsExpanded(false)
                 }}
                 className="w-full text-left group relative overflow-hidden rounded-lg"
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3, delay: index * 0.05 }}
                 whileHover={{ x: 8 }}
                 transition={{ type: "spring", stiffness: 300, damping: 30 }}
               >
@@ -203,6 +206,9 @@ export default function ProjectShowcase() {
                             backgroundColor: selectedProject === index ? project.glassColor : "transparent",
                             backdropFilter: selectedProject === index ? "blur(10px)" : "none",
                           }}
+                          initial={{ opacity: 0, x: -10 }}
+                          animate={{ opacity: 1, x: 0 }}
+                          transition={{ duration: 0.3, delay: index * 0.05 }}
                           whileHover={{ x: 8 }}
                           transition={{ type: "spring", stiffness: 300, damping: 30 }}
                         >
