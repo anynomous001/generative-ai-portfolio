@@ -44,10 +44,10 @@ const Contact = () => {
                         <p className="text-xs tracking-widest text-muted-foreground">ELSEWHERE</p>
                         <div className="mt-3 grid gap-3 sm:grid-cols-2">
                             {[
-                                { label: "GitHub", handle: "@felixmacaspac", href: "https://github.com/anynomous001" },
-                                { label: "v0.dev", handle: "@felixmacaspac", href: "https://v0.dev" },
-                                { label: "HubSpot Community", handle: "@felixmacaspac", href: "https://community.hubspot.com" },
-                                { label: "LinkedIn", handle: "felixmacaspac", href: "https://linkedin.com/in/anynomous001" },
+                                { label: "GitHub", handle: "@anynomous001", href: "https://github.com/anynomous001" },
+                                { label: "X", handle: "@Pritamchak001", href: "https://x.com/Pritamchak001" },
+                                { label: "Hashnode", handle: "@Pritam-dev", href: "https://hashnode.com/@Pritam-dev" },
+                                { label: "LinkedIn", handle: "Pritam Chakroborty", href: "https://www.linkedin.com/in/pritamchakroborty/" },
                             ].map((item) => (
                                 <a
                                     key={item.label}
