@@ -22,7 +22,7 @@ const mono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "PRITAM CHAKROBORTY - FULLSTACK GENERATIVE AI DEVELOPER",
+  title: "Pritam Chakroborty - Fullstack Generative AI Developer",
   description:
     "A modern, animated portfolio with smooth page transitions, glassmorphism, and gradient chroma typography.",
   manifest: "/manifest.webmanifest",

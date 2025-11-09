@@ -35,7 +35,7 @@ const Contact = () => {
                             className="mt-6 inline-flex items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-4 py-2 hover:bg-white/10 transition"
                             aria-label="Email"
                         >
-                            test@example.com <span aria-hidden>→</span>
+                            chakrobortypritam1@gmail.com <span aria-hidden>→</span>
                         </a>
                     </div>
 
