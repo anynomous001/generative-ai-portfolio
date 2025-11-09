@@ -151,7 +151,7 @@ export default function HomePage() {
               </div>
 
               {/* Right column */}
-              <div className="w-full md:max-w-md md:mx-0 border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start p-4 sm:p-6 relative rounded-xl bg-white/5 dark:bg-black/20">
+              <div className="w-full md:max-w-md md:mx-0 border border-black/20 dark:border-white/20 flex flex-col items-start p-4 sm:p-6 relative rounded-xl bg-white/5 dark:bg-black/20">
                 {/* Decorative corner icons: hide on very small screens to avoid clutter */}
                 <Icon className="hidden sm:block absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
                 <Icon className="hidden sm:block absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
@@ -185,9 +185,9 @@ export default function HomePage() {
                 <div className="mt-6 grid gap-3 grid-cols-1 sm:grid-cols-2 w-full">
                   {[
                     { label: "GitHub", handle: "@anynomous001", href: "https://github.com/anynomous001" },
-                    { label: "v0.dev", handle: "@felixmacaspac", href: "https://v0.dev" },
-                    { label: "HubSpot Community", handle: "@felixmacaspac", href: "https://community.hubspot.com" },
-                    { label: "LinkedIn", handle: "Pritam Chakroborty", href: "https://www.linkedin.com/in/pritamchakroborty/r" },
+                    { label: "X", handle: "@Pritamchak001", href: "https://x.com/Pritamchak001" },
+                    { label: "Hashnode", handle: "@Pritam-dev", href: "https://hashnode.com/@Pritam-dev" },
+                    { label: "LinkedIn", handle: "Pritam Chakroborty", href: "https://www.linkedin.com/in/pritamchakroborty/" },
                   ].map((item) => (
                     <a
                       key={item.label}
@@ -208,7 +208,7 @@ export default function HomePage() {
           </div>
 
 
-          <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background via-background/80 to-transparent pointer-events-none"></div>
+          <div className="absolute bottom-0 left-0 right-0 h-24 bg-linear-to-t from-background via-background/80 to-transparent pointer-events-none"></div>
         </Section>
       </motion.div>
       <Projects />

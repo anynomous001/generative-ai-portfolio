@@ -22,7 +22,7 @@ const mono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Animated Portfolio",
+  title: "PRITAM CHAKROBORTY - FULLSTACK GENERATIVE AI DEVELOPER",
   description:
     "A modern, animated portfolio with smooth page transitions, glassmorphism, and gradient chroma typography.",
   manifest: "/manifest.webmanifest",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     description: "A modern, animated portfolio with smooth transitions and rich micro-interactions.",
     images: ["/og.jpg"],
   },
-    generator: 'v0.app'
+  generator: 'v0.app'
 }
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
@@ -41,13 +41,13 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="en" className="scroll-smooth dark">
       <body className={`font-sans ${inter.variable} ${mono.variable} bg-background`}>
         <PageBackground />
-          <Suspense fallback={<div>Loading...</div>}>
-            <Navbar />
-            <main className="min-h-[calc(100dvh-64px)] pt-16">
-              <PageTransition>{children}</PageTransition>
-            </main>
-            <ScrollToTop />
-          </Suspense>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Navbar />
+          <main className="min-h-[calc(100dvh-64px)] pt-16">
+            <PageTransition>{children}</PageTransition>
+          </main>
+          <ScrollToTop />
+        </Suspense>
       </body>
     </html>
   )
