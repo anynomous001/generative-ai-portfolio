@@ -44,3 +44,5 @@ Thumbs.db
 # Misc
 *.tmp
 *.temp
+.next.stale-*/
+tsconfig.tsbuildinfo

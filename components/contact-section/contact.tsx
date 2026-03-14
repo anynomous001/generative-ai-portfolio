@@ -7,10 +7,10 @@ const Contact = () => {
         <div className="relative overflow-hidden ">
             <PageBg variant="contact" />
             <Section>
-                <div className="grid gap-10 md:grid-cols-2">
+                <div className="grid gap-10 md:grid-cols-2 md:gap-12">
                     {/* Left column */}
-                    <div>
-                        <h1 className="font-sans font-semibold text-5xl sm:text-5xl md:text-6xl lg:text-[75px] leading-[1.05] tracking-tight flex items-center justify-center md:justify-start text-center md:text-left"
+                    <div className="text-center md:text-left">
+                        <h1 className="flex items-center justify-center text-center font-sans text-4xl font-semibold leading-[1.05] tracking-tight sm:text-5xl md:justify-start md:text-left md:text-6xl lg:text-[75px]"
                             style={{
                                 background: "linear-gradient(90deg,#202020 10%,#c6c6c6 50%,#202020 90%)",
                                 WebkitBackgroundClip: "text",
@@ -32,7 +32,7 @@ const Contact = () => {
                         </p>
                         <a
                             href="mailto:test@example.com"
-                            className="mt-6 inline-flex items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-4 py-2 hover:bg-white/10 transition"
+                            className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-lg border border-white/10 bg-white/5 px-4 py-3 transition hover:bg-white/10 sm:w-auto"
                             aria-label="Email"
                         >
                             chakrobortypritam1@gmail.com <span aria-hidden>→</span>
@@ -54,10 +54,10 @@ const Contact = () => {
                                     href={item.href}
                                     target="_blank"
                                     rel="noreferrer"
-                                    className="glass rounded-xl p-4 hover:scale-[1.01] transition"
+                                    className="glass rounded-xl p-4 transition hover:scale-[1.01]"
                                 >
                                     <div className="text-sm font-medium">{item.label}</div>
-                                    <div className="mt-1 text-sm text-foreground/75">{item.handle}</div>
+                                    <div className="mt-1 text-sm text-muted-foreground">{item.handle}</div>
                                 </a>
                             ))}
                         </div>

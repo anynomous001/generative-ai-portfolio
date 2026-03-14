@@ -4,25 +4,25 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
+  --background: #050505;
+  --foreground: #c8b4a0;
+  --card: #0a0a0a;
+  --card-foreground: #c8b4a0;
+  --popover: #0a0a0a;
+  --popover-foreground: #c8b4a0;
+  --primary: #c8b4a0;
+  --primary-foreground: #050505;
+  --secondary: #0d0d0d;
+  --secondary-foreground: #c8b4a0;
+  --muted: #0d0d0d;
+  --muted-foreground: #f8f7f5;
+  --accent: #c8b4a0;
+  --accent-foreground: #050505;
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
+  --border: color-mix(in srgb, #e6e1d7 12%, transparent);
+  --input: color-mix(in srgb, #e6e1d7 12%, transparent);
+  --ring: color-mix(in srgb, #e6e1d7 35%, transparent);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -41,20 +41,20 @@
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.145 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.145 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.985 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
+  --background: #050505;
+  --foreground: #c8b4a0;
+  --card: #0a0a0a;
+  --card-foreground: #c8b4a0;
+  --popover: #0a0a0a;
+  --popover-foreground: #c8b4a0;
+  --primary: #c8b4a0;
+  --primary-foreground: #050505;
+  --secondary: #0d0d0d;
+  --secondary-foreground: #c8b4a0;
+  --muted: #0d0d0d;
+  --muted-foreground: #f8f7f5;
+  --accent: #c8b4a0;
+  --accent-foreground: #050505;
   --destructive: oklch(0.396 0.141 25.723);
   --destructive-foreground: oklch(0.637 0.237 25.331);
   --border: oklch(0.269 0 0);
@@ -115,13 +115,9 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 
-  /* Brand system: keep the hero palette cool and readable on dark surfaces */
-  --brand-primary: oklch(0.72 0.12 240);
-  /* steel blue */
-  --brand-accent: oklch(0.8 0.11 195);
-  /* soft cyan */
-  --brand-green: oklch(0.8 0.14 85);
-  /* warm amber */
+  --brand-primary: var(--foreground);
+  --brand-accent: var(--foreground);
+  --brand-green: var(--foreground);
 
   --brand-bg: var(--background);
   --brand-fg: var(--foreground);
@@ -138,6 +134,41 @@
 
 .lead {
   @apply text-base md:text-lg text-muted-foreground leading-relaxed;
+}
+
+.warm-heading {
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--color-foreground) 28%, transparent) 0%,
+    var(--color-foreground) 50%,
+    color-mix(in srgb, var(--color-foreground) 28%, transparent) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.warm-heading-strong {
+  background: linear-gradient(
+    90deg,
+    var(--color-foreground) 0%,
+    color-mix(in srgb, var(--color-foreground) 82%, transparent) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.warm-underline {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--color-foreground) 95%, transparent),
+    color-mix(in srgb, var(--color-foreground) 35%, transparent)
+  );
 }
 
 /* Chroma gradient text */
@@ -233,9 +264,130 @@
   }
 }
 
+@keyframes word-appear {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.8);
+    filter: blur(10px);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translateY(10px) scale(0.95);
+    filter: blur(2px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+@keyframes grid-draw {
+  0% {
+    stroke-dashoffset: 1000;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 0.15;
+  }
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    opacity: 0.1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes underline-grow {
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) translateX(0);
+    opacity: 0.2;
+  }
+  25% {
+    transform: translateY(-10px) translateX(5px);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(-5px) translateX(-3px);
+    opacity: 0.4;
+  }
+  75% {
+    transform: translateY(-15px) translateX(7px);
+    opacity: 0.8;
+  }
+}
+
+.font-primary {
+  font-family: var(--font-sans);
+}
+
+.text-decoration {
+  position: relative;
+}
+
+.word {
+  display: inline-block;
+  margin-right: 0.35em;
+  opacity: 0;
+  will-change: transform, opacity, filter;
+}
+
+.grid-line {
+  stroke: rgba(200, 180, 160, 0.18);
+  stroke-width: 0.9;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: grid-draw 2s ease-out forwards;
+}
+
+.detail-dot {
+  fill: rgba(200, 180, 160, 0.72);
+  opacity: 0;
+  animation: word-appear 0.8s ease-out forwards;
+}
+
+.corner-element {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  opacity: 0;
+  animation: word-appear 0.9s ease-out forwards;
+}
+
+.floating-element {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(200, 180, 160, 0.9) 0%, rgba(200, 180, 160, 0.18) 60%, transparent 100%);
+  box-shadow: 0 0 28px rgba(200, 180, 160, 0.22);
+  opacity: 0;
+  pointer-events: none;
+  filter: blur(0.2px);
+  animation: float 7s ease-in-out infinite paused;
+  transition: opacity 0.4s ease;
+}
+
 
 .section {
-  @apply max-w-6xl mx-auto px-6 py-16 md:py-24;
+  @apply mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16 md:py-24;
 }
 
 @layer base {

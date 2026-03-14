@@ -6,6 +6,7 @@ import { motion } from "framer-motion"
 import { ArrowUpRight, Github } from "lucide-react"
 import Section from "@/components/section"
 import { LampContainer } from "@/components/ui/lamp"
+import { GlowCard } from "@/components/ui/spotlight-card"
 
 type Project = {
   title: string
@@ -24,7 +25,7 @@ const projects: Project[] = [
       "AI-powered mock interviews with adaptive questioning, live feedback, analytics, and coaching flows built for serious interview prep.",
     image: "/images/Prep-piper.jpg",
     tech: ["Next.js", "TypeScript", "AI SDK", "LangChain", "Analytics"],
-    accent: "from-sky-400/30 via-cyan-300/10 to-transparent",
+    accent: "from-[#e6e1d7]/14 via-[#e6e1d7]/6 to-transparent",
     demo: "#",
     repo: "#",
   },
@@ -34,7 +35,7 @@ const projects: Project[] = [
       "An event-driven automation platform with webhook ingestion, Kafka-powered workflow routing, and secure operational dashboards.",
     image: "/images/zapier.jpg",
     tech: ["Next.js", "Node.js", "Kafka", "PostgreSQL", "Prisma"],
-    accent: "from-fuchsia-400/30 via-pink-300/10 to-transparent",
+    accent: "from-[#e6e1d7]/14 via-[#e6e1d7]/6 to-transparent",
     demo: "#",
     repo: "#",
   },
@@ -44,7 +45,7 @@ const projects: Project[] = [
       "A wallet experience with transfers, beneficiary management, money requests, and transaction visibility in a compact UI.",
     image: "/images/playtm.webp",
     tech: ["Next.js", "Prisma", "PostgreSQL", "Tailwind CSS"],
-    accent: "from-amber-300/30 via-orange-300/10 to-transparent",
+    accent: "from-[#e6e1d7]/14 via-[#e6e1d7]/6 to-transparent",
     demo: "#",
     repo: "#",
   },
@@ -54,7 +55,7 @@ const projects: Project[] = [
       "A Medium-inspired reading product with writing, favorites, profile views, and a distraction-light content experience.",
     image: "/images/readium.webp",
     tech: ["React", "TypeScript", "Prisma", "Hono"],
-    accent: "from-emerald-300/30 via-green-300/10 to-transparent",
+    accent: "from-[#e6e1d7]/14 via-[#e6e1d7]/6 to-transparent",
     demo: "#",
     repo: "#",
   },
@@ -64,7 +65,7 @@ const projects: Project[] = [
       "Image upload and AI-assisted visual interpretation with rate limiting, response generation, and a focused single-purpose flow.",
     image: "/images/PictureWhisperAI.webp",
     tech: ["Next.js", "OpenAI API", "TypeScript", "Image AI"],
-    accent: "from-indigo-300/30 via-blue-300/10 to-transparent",
+    accent: "from-[#e6e1d7]/14 via-[#e6e1d7]/6 to-transparent",
     demo: "#",
     repo: "#",
   },
@@ -74,121 +75,53 @@ const projects: Project[] = [
       "A custom quiz product for authoring, categorization, score tracking, and engaging participation across multiple topics.",
     image: "/images/quizzicle.webp",
     tech: ["React", "Node.js", "MongoDB", "Express"],
-    accent: "from-yellow-300/30 via-amber-300/10 to-transparent",
+    accent: "from-[#e6e1d7]/14 via-[#e6e1d7]/6 to-transparent",
     demo: "#",
     repo: "#",
   },
 ]
 
-const featuredProject = projects[0]
-const supportingProjects = projects.slice(1)
-
 export default function Projects() {
   return (
     <section className="relative z-20 overflow-hidden">
-      <Section className="relative pt-36 pb-20 md:pt-48">
+      <Section className="relative pt-24 pb-16 sm:pt-28 sm:pb-20 md:pt-40 md:pb-20">
         <div className="relative z-10">
           <div className="flex flex-col gap-8">
             <div className="relative">
               <LampContainer
-                className="mt-10 min-h-[30rem] overflow-visible rounded-none bg-transparent md:mt-14 md:min-h-[34rem]"
+                className="mt-6 min-h-[24rem] overflow-visible rounded-none bg-transparent sm:mt-10 md:mt-14 md:min-h-[34rem]"
               >
-                <div className="mx-auto max-w-5xl translate-y-40 text-center md:translate-y-32">
-                  <p className="text-xs tracking-[0.28em] text-slate-400">SELECTED WORK</p>
-                  <h2 className="mt-4 bg-gradient-to-b from-white to-slate-300 bg-clip-text text-4xl font-semibold leading-[1.02] text-transparent md:text-[4.15rem]">
+                <div className="mx-auto max-w-5xl translate-y-28 px-2 text-center sm:translate-y-32 md:translate-y-32">
+                  <p className="text-[11px] tracking-[0.24em] text-muted-foreground sm:text-xs sm:tracking-[0.28em]">SELECTED WORK</p>
+                  <h2 className="mt-4 bg-gradient-to-b from-[#f8f7f5] to-[#c8b4a0] bg-clip-text text-3xl font-semibold leading-[1.04] text-transparent sm:text-4xl md:text-6xl md:leading-[1.02] lg:text-[4.15rem]">
                     Products with sharp UX and real-world utility.
                   </h2>
-                  <p className="mx-auto mt-5 max-w-3xl text-base leading-relaxed text-slate-300 md:text-xl">
+                  <p className="mx-auto mt-4 max-w-3xl text-sm leading-7 text-muted-foreground sm:text-base md:mt-5 md:text-xl">
                     I focus on interfaces that explain themselves quickly, ship fast, and hold up under real product use.
                   </p>
                 </div>
               </LampContainer>
             </div>
-
-            <motion.article
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-80px" }}
-              transition={{ duration: 0.5 }}
-              className="group relative mx-auto w-full max-w-[1080px] overflow-hidden rounded-[1.6rem] border border-white/[0.08] bg-white/[0.03] p-5 md:p-6"
-            >
-              <div className={`absolute inset-0 bg-gradient-to-br ${featuredProject.accent}`} />
-              <div className="relative">
-                <div className="relative aspect-[16/8.6] overflow-hidden rounded-[1.2rem] border border-white/[0.08]">
-                  <Image
-                    src={featuredProject.image}
-                    alt={featuredProject.title}
-                    fill
-                    className="object-cover object-top transition-transform duration-700 group-hover:scale-[1.04]"
-                    sizes="100vw"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/25 to-transparent" />
-                </div>
-
-                <div className="mt-6 flex flex-col gap-5 px-1 pb-1 lg:flex-row lg:items-start lg:justify-between">
-                  <div className="max-w-2xl">
-                    <div className="inline-flex rounded-full border border-white/[0.12] bg-white/[0.06] px-3 py-1 text-[11px] tracking-[0.24em] text-slate-300">
-                      FEATURED BUILD
-                    </div>
-                    <h3 className="mt-4 text-3xl font-semibold leading-tight text-slate-50 md:text-4xl">
-                      {featuredProject.title}
-                    </h3>
-                    <p className="mt-3 text-sm leading-7 text-slate-300 md:text-base">
-                      {featuredProject.summary}
-                    </p>
-                  </div>
-
-                  <div className="w-full max-w-lg rounded-[1.2rem] border border-white/[0.08] bg-slate-950/45 p-5 md:p-6">
-                    <ul className="flex flex-wrap gap-2">
-                      {featuredProject.tech.map((item) => (
-                        <li
-                          key={item}
-                          className="rounded-full border border-white/[0.12] bg-white/[0.06] px-3 py-1 text-xs text-slate-200"
-                        >
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
-
-                    <div className="mt-5 flex flex-wrap gap-3">
-                      {featuredProject.demo && (
-                        <Link
-                          href={featuredProject.demo}
-                          className="inline-flex items-center gap-2 rounded-full border border-sky-300/25 bg-sky-300/10 px-4 py-2 text-sm text-sky-100 transition hover:bg-sky-300/15"
-                        >
-                          Live Preview
-                          <ArrowUpRight size={15} />
-                        </Link>
-                      )}
-                      {featuredProject.repo && (
-                        <Link
-                          href={featuredProject.repo}
-                          className="inline-flex items-center gap-2 rounded-full border border-white/[0.12] bg-white/[0.05] px-4 py-2 text-sm text-slate-100 transition hover:bg-white/[0.09]"
-                        >
-                          Source
-                          <Github size={15} />
-                        </Link>
-                      )}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </motion.article>
           </div>
 
-          <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-            {supportingProjects.map((project, index) => (
-              <motion.article
+          <div className="mt-8 grid gap-4 sm:mt-10 sm:gap-5 md:grid-cols-2 xl:grid-cols-3">
+            {projects.map((project, index) => (
+              <motion.div
                 key={project.title}
                 initial={{ opacity: 0, y: 22 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-60px" }}
                 transition={{ duration: 0.45, delay: index * 0.06 }}
-                className="group relative overflow-hidden rounded-[1.6rem] border border-white/[0.08] bg-white/[0.03] p-4"
+                className="h-full"
               >
-                <div className={`absolute inset-0 bg-gradient-to-br ${project.accent}`} />
-                <div className="relative">
-                  <div className="relative aspect-[16/11] overflow-hidden rounded-[1.2rem] border border-white/[0.08]">
+                <GlowCard
+                  glowColor="warm"
+                  customSize
+                  className="group h-full overflow-hidden rounded-[1.4rem] bg-white/[0.03] p-3 sm:rounded-[1.6rem] sm:p-4"
+                >
+                  <div className={`absolute inset-0 bg-gradient-to-br ${project.accent}`} />
+                  <div className="relative">
+                  <div className="relative aspect-[16/11] overflow-hidden rounded-[1.2rem] border border-foreground/10">
                     <Image
                       src={project.image}
                       alt={project.title}
@@ -196,17 +129,17 @@ export default function Projects() {
                       className="object-cover transition-transform duration-700 group-hover:scale-[1.04]"
                       sizes="(max-width: 1280px) 50vw, 33vw"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950/55 via-transparent to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-transparent" />
                   </div>
 
-                  <div className="mt-5">
+                  <div className="mt-4 sm:mt-5">
                     <div className="flex items-start justify-between gap-4">
-                      <h3 className="text-xl font-semibold text-slate-50">{project.title}</h3>
+                      <h3 className="text-lg font-semibold text-foreground sm:text-xl">{project.title}</h3>
                       <div className="flex gap-2">
                         {project.demo && (
                           <Link
                             href={project.demo}
-                            className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/[0.12] bg-white/[0.06] text-slate-100 transition hover:bg-white/[0.12]"
+                            className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-foreground/12 bg-white/[0.06] text-foreground transition hover:bg-white/[0.12] sm:h-9 sm:w-9"
                             aria-label={`Open ${project.title} demo`}
                           >
                             <ArrowUpRight size={15} />
@@ -215,7 +148,7 @@ export default function Projects() {
                         {project.repo && (
                           <Link
                             href={project.repo}
-                            className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/[0.12] bg-white/[0.06] text-slate-100 transition hover:bg-white/[0.12]"
+                            className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-foreground/12 bg-white/[0.06] text-foreground transition hover:bg-white/[0.12] sm:h-9 sm:w-9"
                             aria-label={`Open ${project.title} repository`}
                           >
                             <Github size={15} />
@@ -224,21 +157,19 @@ export default function Projects() {
                       </div>
                     </div>
 
-                    <p className="mt-3 text-sm leading-7 text-slate-300">{project.summary}</p>
+                    <p className="mt-3 text-sm leading-6 text-muted-foreground sm:leading-7">{project.summary}</p>
 
                     <ul className="mt-5 flex flex-wrap gap-2">
                       {project.tech.map((item) => (
-                        <li
-                          key={item}
-                          className="rounded-full border border-white/[0.1] bg-slate-950/45 px-3 py-1 text-xs text-slate-200"
-                        >
+                        <li key={item} className="rounded-full border border-foreground/10 bg-black/45 px-3 py-1 text-[11px] text-muted-foreground sm:text-xs">
                           {item}
                         </li>
                       ))}
                     </ul>
                   </div>
                 </div>
-              </motion.article>
+                </GlowCard>
+              </motion.div>
             ))}
           </div>
         </div>
