@@ -84,6 +84,19 @@ const beforeAfterStyles = `
     inset: -10px;
     border-width: 10px;
   }
+
+  @media (max-width: 767px) {
+    [data-glow]::before,
+    [data-glow]::after,
+    [data-glow] > [data-glow] {
+      display: none;
+    }
+
+    [data-glow] {
+      background-image: none !important;
+      background-attachment: initial !important;
+    }
+  }
 `;
 
 export function GlowCard({
@@ -156,7 +169,7 @@ export function GlowCard({
       backgroundAttachment: "fixed",
       border: "var(--border-size) solid var(--backup-border)",
       position: "relative",
-      touchAction: "none",
+      touchAction: "auto",
     };
 
     if (width !== undefined) {

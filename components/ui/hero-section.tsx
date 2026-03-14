@@ -178,7 +178,7 @@ export function Component() {
             >
               <span className="word" data-delay="0">PORTFOLIO</span>
               <span className="word" data-delay="180">/</span>
-              <span className="word" data-delay="360">2025</span>
+              <span className="word" data-delay="360">2026</span>
             </p>
 
             <h1
