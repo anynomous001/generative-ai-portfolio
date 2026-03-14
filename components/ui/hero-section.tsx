@@ -172,124 +172,124 @@ export function Component() {
 
       <div className="relative z-10 flex min-h-dvh items-center px-4 py-16 sm:px-6 sm:py-20 md:px-12 md:py-24 lg:px-16">
         <div className="mx-auto w-full max-w-6xl text-center">
-            <p
-              className="text-[10px] font-medium uppercase tracking-[0.22em] opacity-80 sm:text-[11px] md:text-xs"
-              style={{ color: colors[200] }}
-            >
-              <span className="word" data-delay="0">PORTFOLIO</span>
-              <span className="word" data-delay="180">/</span>
-              <span className="word" data-delay="360">2026</span>
-            </p>
+          <p
+            className="text-[10px] font-medium uppercase tracking-[0.22em] opacity-80 sm:text-[11px] md:text-xs"
+            style={{ color: colors[200] }}
+          >
+            <span className="word" data-delay="0">PORTFOLIO</span>
+            <span className="word" data-delay="180">/</span>
+            <span className="word" data-delay="360">2026</span>
+          </p>
 
-            <h1
-              className="mt-5 text-decoration text-4xl font-semibold leading-[0.98] tracking-tight sm:text-6xl md:text-7xl lg:text-[5.8rem]"
-              style={{ color: colors[200] }}
-            >
-              <span className="block">Pritam</span>
-              <span className="block">Chakroborty</span>
-            </h1>
+          <h1
+            className="mt-5 text-decoration text-4xl font-semibold leading-[0.98] tracking-tight sm:text-6xl md:text-7xl lg:text-[5.8rem]"
+            style={{ color: colors[200] }}
+          >
+            <span className="block">Pritam</span>
+            <span className="block">Chakroborty</span>
+          </h1>
 
-            <div
-              className="mx-auto mt-6 max-w-4xl text-base font-normal leading-[1.5] tracking-[-0.02em] sm:text-xl md:mt-8 md:max-w-5xl md:text-[1.95rem]"
-              style={{ color: colors[50] }}
-            >
-              <span>Full Stack Generative AI Developer </span>
-              <span style={{ color: colors[200] }}>crafting digital experiences at the intersection of </span>
-              <span className="underline decoration-2 underline-offset-6" style={{ textDecorationColor: "#3ec9ff" }}>
-                design,
-              </span>
-              <span> </span>
-              <span className="underline decoration-2 underline-offset-6" style={{ textDecorationColor: "#6ad58a" }}>
-                technology,
-              </span>
-              <span style={{ color: colors[200] }}> and </span>
-              <span className="underline decoration-2 underline-offset-6" style={{ textDecorationColor: colors[200] }}>
-                user experience.
-              </span>
-            </div>
+          <div
+            className="mx-auto mt-6 max-w-4xl text-base font-normal leading-[1.5] tracking-[-0.02em] sm:text-xl md:mt-8 md:max-w-5xl md:text-[1.95rem]"
+            style={{ color: colors[50] }}
+          >
+            <span>Full Stack Generative AI Developer </span>
+            <span style={{ color: colors[200] }}>crafting digital experiences at the intersection of </span>
+            <span className="underline decoration-2 underline-offset-6" style={{ textDecorationColor: "#3ec9ff" }}>
+              design,
+            </span>
+            <span> </span>
+            <span className="underline decoration-2 underline-offset-6" style={{ textDecorationColor: "#6ad58a" }}>
+              technology,
+            </span>
+            <span style={{ color: colors[200] }}> and </span>
+            <span className="underline decoration-2 underline-offset-6" style={{ textDecorationColor: colors[200] }}>
+              user experience.
+            </span>
+          </div>
 
-            <div className="mx-auto mt-10 max-w-5xl md:mt-12">
-              <div className="flex flex-col items-center gap-6">
-                <div>
-                  <p className="text-[11px] font-medium tracking-[0.22em] sm:text-xs" style={{ color: colors[50] }}>
-                    FOCUS
-                  </p>
-                  <ul className="mt-4 flex flex-wrap justify-center gap-2">
-                    {["Next.js", "React", "TypeScript", "LangChain", "LangGraph", "Node.js", "RAG", "Agentic Workflows", "Automation"].map((tag) => (
-                      <li
-                        key={tag}
-                        className="rounded-full border px-3 py-1.5 text-xs sm:text-sm"
-                        style={{
-                          borderColor: "rgba(248,247,245,0.22)",
-                          background: "transparent",
-                          color: colors[50],
-                        }}
-                      >
-                        {tag}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+          <div className="mx-auto mt-10 max-w-5xl md:mt-12">
+            <div className="flex flex-col items-center gap-6">
+              <div>
+                <p className="text-[11px] font-medium tracking-[0.22em] sm:text-xs" style={{ color: colors[50] }}>
+                  FOCUS
+                </p>
+                <ul className="mt-4 flex flex-wrap justify-center gap-2">
+                  {["Next.js", "React", "TypeScript", "LangChain", "Python", "LangGraph", "Node.js", "RAG", "Agentic Workflows", "Automation"].map((tag) => (
+                    <li
+                      key={tag}
+                      className="rounded-full border px-3 py-1.5 text-xs sm:text-sm"
+                      style={{
+                        borderColor: "rgba(248,247,245,0.22)",
+                        background: "transparent",
+                        color: colors[50],
+                      }}
+                    >
+                      {tag}
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
+          </div>
 
-            <div className="mt-7 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-sm sm:text-base" style={{ color: colors[200] }}>
-              <span className="inline-flex items-center gap-2">
-                <span className="h-2.5 w-2.5 rounded-full bg-emerald-500" />
-                Available for work
-              </span>
-              <span className="opacity-70">Kolkata, India</span>
-              <span className="hidden h-1 w-1 rounded-full opacity-50 lg:block" style={{ background: colors[200] }} />
-              <span className="opacity-90">Software Developer @ Prep-Piper</span>
-            </div>
+          <div className="mt-7 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-sm sm:text-base" style={{ color: colors[200] }}>
+            <span className="inline-flex items-center gap-2">
+              <span className="h-2.5 w-2.5 rounded-full bg-emerald-500" />
+              Available for work
+            </span>
+            <span className="opacity-70">Kolkata, India</span>
+            <span className="hidden h-1 w-1 rounded-full opacity-50 lg:block" style={{ background: colors[200] }} />
+            <span className="opacity-90">Software Developer @ Prep-Piper</span>
+          </div>
 
-            <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
-              <Link
-                href="/Generative_AI_Portfolio.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex w-full items-center justify-center gap-3 rounded-2xl border px-6 py-3.5 text-base font-medium transition hover:bg-white/[0.04] sm:w-auto sm:px-6 sm:py-4 sm:text-lg"
-                style={{ borderColor: "rgba(248,247,245,0.22)", color: colors[50] }}
-              >
-                Resume
-                <span aria-hidden>→</span>
-              </Link>
-              <Link
-                href="mailto:chakrobortypritam1@gmail.com"
-                className="inline-flex w-full items-center justify-center gap-3 rounded-2xl border px-6 py-3.5 text-base font-medium transition hover:bg-white/[0.04] sm:w-auto sm:px-6 sm:py-4 sm:text-lg"
-                style={{ borderColor: "rgba(200,180,160,0.18)", color: colors[50], background: "rgba(255,255,255,0.04)" }}
-              >
-                Contact Me
-              </Link>
-            </div>
+          <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
+            <Link
+              href="/Generative_AI_Portfolio.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex w-full items-center justify-center gap-3 rounded-2xl border px-6 py-3.5 text-base font-medium transition hover:bg-white/[0.04] sm:w-auto sm:px-6 sm:py-4 sm:text-lg"
+              style={{ borderColor: "rgba(248,247,245,0.22)", color: colors[50] }}
+            >
+              Resume
+              <span aria-hidden>→</span>
+            </Link>
+            <Link
+              href="mailto:chakrobortypritam1@gmail.com"
+              className="inline-flex w-full items-center justify-center gap-3 rounded-2xl border px-6 py-3.5 text-base font-medium transition hover:bg-white/[0.04] sm:w-auto sm:px-6 sm:py-4 sm:text-lg"
+              style={{ borderColor: "rgba(200,180,160,0.18)", color: colors[50], background: "rgba(255,255,255,0.04)" }}
+            >
+              Contact Me
+            </Link>
+          </div>
 
-            <div className="mt-8 flex flex-wrap justify-center gap-3 sm:gap-4">
-              {[
-                { label: "GitHub", href: "https://github.com/anynomous001", icon: Github },
-                { label: "X", href: "https://x.com/Pritamchak001", icon: Twitter },
-                { label: "Hashnode", href: "https://hashnode.com/@Pritam-dev", icon: BookOpenText },
-                { label: "LinkedIn", href: "https://www.linkedin.com/in/pritamchakroborty/", icon: Linkedin },
-              ].map((item) => {
-                const Icon = item.icon;
-                return (
-                  <a
-                    key={item.label}
-                    href={item.href}
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label={item.label}
-                    className="inline-flex h-11 w-11 items-center justify-center rounded-full border transition hover:bg-white/[0.05] sm:h-12 sm:w-12"
-                    style={{
-                      borderColor: "rgba(248,247,245,0.15)",
-                      background: "rgba(255,255,255,0.025)",
-                      color: colors[50],
-                    }}
-                  >
-                    <Icon size={18} />
-                  </a>
-                );
-              })}
-            </div>
+          <div className="mt-8 flex flex-wrap justify-center gap-3 sm:gap-4">
+            {[
+              { label: "GitHub", href: "https://github.com/anynomous001", icon: Github },
+              { label: "X", href: "https://x.com/Pritamchak001", icon: Twitter },
+              { label: "Hashnode", href: "https://hashnode.com/@Pritam-dev", icon: BookOpenText },
+              { label: "LinkedIn", href: "https://www.linkedin.com/in/pritamchakroborty/", icon: Linkedin },
+            ].map((item) => {
+              const Icon = item.icon;
+              return (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={item.label}
+                  className="inline-flex h-11 w-11 items-center justify-center rounded-full border transition hover:bg-white/[0.05] sm:h-12 sm:w-12"
+                  style={{
+                    borderColor: "rgba(248,247,245,0.15)",
+                    background: "rgba(255,255,255,0.025)",
+                    color: colors[50],
+                  }}
+                >
+                  <Icon size={18} />
+                </a>
+              );
+            })}
+          </div>
         </div>
       </div>
 

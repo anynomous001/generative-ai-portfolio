@@ -5,11 +5,33 @@ import { GlowCard } from "@/components/ui/spotlight-card"
 
 const items = [
     {
+        company: "Prep-Piper",
+        role: "Software Developer",
+        period: "2025 — Present",
+        points: [
+            "Developed and maintained the core AI and full-stack architecture for Prep-Piper, an AI-powered interview preparation platform.",
+            "Implemented advanced Agentic Workflows and RAG Systems to deliver personalized, real-time interview analysis and feedback.",
+            "Key technologies: Next.js, React, TypeScript, Node.js, LangChain, LangGraph.",
+        ],
+    },
+    {
+        company: "TruPass",
+        role: "Full Stack Developer",
+        period: "2025 — 2026",
+        points: [
+            "Owned end-to-end architecture and development of the TruPass merchant platform — from system design and PostgreSQL schema to frontend UI and Python backend APIs, containerized with Docker and deployed on AWS.",
+            "Structured the entire platform from scratch, making foundational decisions on tech stack, project architecture, and scalability patterns using Next.js, TypeScript, and Prisma ORM.",
+            "Designed and built RESTful backend services in Python with Redis caching to power merchant operations including billing, access control, and team management.",
+            "Engineered a full-featured merchant dashboard with real-time analytics and transaction visibility using Next.js, React, and Tailwind CSS, with polished motion design via Framer Motion.",
+            "Designed and developed a role-based access control (RBAC) system, team invitation flow, and self-serve billing management module.",
+        ],
+    },
+    {
         company: "Chingu",
         role: "Frontend Developer",
         period: "Dec 2023 — Mar 2024",
         points: [
-            "Built an optimized to-do tracker with real-time collaboration and intuitive task categorization, reducing project completion times by 25%.",
+            "Developed interactive web experiences with dynamic motion and spotlight-driven visual depth using Next.js, Framer Motion, and Tailwind CSS.",
             "Mentored a team of five developers using Agile methodology, improving delivery predictability by 60%.",
         ],
     },
@@ -20,24 +42,6 @@ const items = [
         points: [
             "Developed and deployed a resumeless hiring platform using reusable React components, improving future development speed by 25%.",
             "Collaborated with senior developers during daily stand-ups, increasing sprint velocity by 30% and reducing bug-related rework by 45%.",
-        ],
-    },
-    {
-        company: "PixelForge Studio",
-        role: "Frontend Engineer Intern",
-        period: "Jun 2022 — Aug 2022",
-        points: [
-            "Built responsive landing pages and campaign microsites for client launches, improving mobile engagement and reducing bounce rates across key pages.",
-            "Worked closely with designers to translate high-fidelity Figma concepts into reusable React UI blocks with consistent interaction patterns.",
-        ],
-    },
-    {
-        company: "NovaStack Labs",
-        role: "Web Development Intern",
-        period: "Jan 2022 — May 2022",
-        points: [
-            "Implemented admin dashboard modules and data views for internal tools, helping teams monitor operations with clearer reporting interfaces.",
-            "Supported API integration, bug fixing, and QA validation across product releases, improving delivery confidence during weekly deployments.",
         ],
     },
 ];
@@ -53,7 +57,7 @@ const Experience = () => {
                             Roles, teams, and product impact.
                         </h2>
                         <p className="mt-4 max-w-md text-base leading-relaxed text-muted-foreground md:text-lg">
-                            A cleaner view of the work I have done across product delivery, frontend systems, and team collaboration.
+                            A cleaner view of the work I have done across product delivery, full-stack systems, and AI engineering.
                         </p>
 
                         <GlowCard glowColor="warm" customSize className="mt-8 rounded-3xl bg-white/[0.03] p-4 sm:p-5">
@@ -65,11 +69,11 @@ const Experience = () => {
                                         <div className="text-sm text-muted-foreground">Experience blocks</div>
                                     </div>
                                     <div>
-                                        <div className="text-2xl font-semibold text-foreground">Frontend</div>
+                                        <div className="text-2xl font-semibold text-foreground">Full Stack</div>
                                         <div className="text-sm text-muted-foreground">Primary strength</div>
                                     </div>
                                     <div>
-                                        <div className="text-2xl font-semibold text-foreground">Product</div>
+                                        <div className="text-2xl font-semibold text-foreground">AI & Product</div>
                                         <div className="text-sm text-muted-foreground">Execution focus</div>
                                     </div>
                                 </div>
