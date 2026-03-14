@@ -2,12 +2,9 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Inter, JetBrains_Mono } from "next/font/google"
 import "./globals.css"
-import Navbar from "@/components/navbar"
-import Providers from "@/components/providers"
 import ScrollToTop from "@/components/scroll-to-top"
 import { Suspense } from "react"
 import PageTransition from "@/components/page-transition"
-import PageBackground from "@/components/backgrounds/page-bg"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -40,10 +37,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en" className="scroll-smooth dark">
       <body className={`font-sans ${inter.variable} ${mono.variable} bg-background`}>
-        <PageBackground />
         <Suspense fallback={<div>Loading...</div>}>
-          <Navbar />
-          <main className="min-h-[calc(100dvh-64px)] pt-16">
+          <main className="min-h-dvh">
             <PageTransition>{children}</PageTransition>
           </main>
           <ScrollToTop />

@@ -115,13 +115,13 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 
-  /* Brand system: 1 primary + 2 accents + neutrals (3-5 colors total) */
-  --brand-primary: oklch(0.68 0.14 250);
-  /* electric blue */
-  --brand-accent: oklch(0.64 0.18 310);
-  /* violet */
-  --brand-green: oklch(0.7 0.15 150);
-  /* teal-green */
+  /* Brand system: keep the hero palette cool and readable on dark surfaces */
+  --brand-primary: oklch(0.72 0.12 240);
+  /* steel blue */
+  --brand-accent: oklch(0.8 0.11 195);
+  /* soft cyan */
+  --brand-green: oklch(0.8 0.14 85);
+  /* warm amber */
 
   --brand-bg: var(--background);
   --brand-fg: var(--foreground);

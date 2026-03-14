@@ -1,119 +1,51 @@
 'use client'
 
-import Timeline from "@/components/timeline"
 import PageBg from "@/components/backgrounds/page-bg"
 import Section from "@/components/section"
 import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 import { motion } from "framer-motion"
-import { LightRays } from "@/components/ui/light-rays"
-
-import React from "react";
-import { Icon } from "@/components/ui/evervault-card";
-import ProjectShowcase from "@/components/projects/project-showcase"
-import { TextReveal } from "@/components/ui/text-reveal"
-import {
-  ScrollVelocityContainer,
-  ScrollVelocityRow,
-} from "@/components/ui/scroll-based-velocity"
+import { Icon } from "@/components/ui/evervault-card"
 import Projects from "@/components/projects/projects"
 import Experience from "@/components/experience/experience"
 import Stack from "@/components/tech-section/stack"
 import About from "@/components/about-section/about"
 import Contact from "@/components/contact-section/contact"
 import Blog from "@/components/Blog-section/blog"
-import HighlightBg from "@/components/hi-light/hilight_text"
 import HighlightUnderline from "@/components/hi-light/hilight_underline"
-
-const projects = [
-  {
-    title: "3D Product Viewer",
-    description: "Real-time WebGL renderer with optimized texture streaming.",
-    tech: ["Next.js", "Three.js", "WebGL"],
-    demo: "#",
-    repo: "#",
-  },
-  {
-    title: "AI Notes",
-    description: "Structured note-taking with semantic search.",
-    tech: ["Next.js", "AI SDK", "Postgres"],
-    demo: "#",
-    repo: "#",
-  },
-  {
-    title: "Realtime Dashboard",
-    description: "Live metrics with elegant charts and alerts.",
-    tech: ["Next.js", "SWR", "Recharts"],
-    demo: "#",
-    repo: "#",
-  },
-]
-
-
-
-
 
 
 export default function HomePage() {
   return (
     <>
       {/* <PageBg variant="contact" /> */}
-      <PageBg variant="about" />
+      <PageBg variant="hero" />
 
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.5 }}
       >
-        <Section>
-          <div className="relative">
-            <div className="grid gap-10 md:grid-cols-[1.3fr_.7fr] md:items-start relative z-10">
+        <Section className="relative flex min-h-dvh items-center pt-16 pb-10 md:pt-20 md:pb-14">
+          <div className="relative w-full">
+            <div className="relative z-10 grid gap-10 md:grid-cols-[1.3fr_.7fr] md:items-center">
               <div>
                 <p className="text-xs tracking-widest text-muted-foreground">PORTFOLIO / 2025</p>
 
-                <h1
-                  className="font-sans font-semibold  text-5xl md:text-[5rem] lg:text-[6rem]lg:text-[75px] leading-[1.05] tracking-tight flex items-center text-white"
-                  style={{
-                    background: "linear-gradient(90deg, rgba(185,230,240,0.85) 10%, rgba(234,224,236,0.7) 40%, rgba(255,255,255,0.5) 60%, rgba(180,203,230,0.85) 90%)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                    color: "transparent"
-                  }}
-                >
+                <h1 className="mt-4 max-w-4xl font-sans text-5xl font-semibold leading-[0.96] tracking-tight text-slate-50 md:text-[5rem] lg:text-[6.3rem]">
                   <span className="block">Pritam</span>
-
-                </h1>
-                <h1 className="font-sans font-semibold  text-5xl md:text-[5rem] lg:text-[6rem]lg:text-[75px] leading-[1.05] tracking-tight flex items-center"
-                  style={{
-                    background: "linear-gradient(90deg, rgba(255,255,255,0.8) 10%, rgba(202,218,232,0.7) 40%, rgba(217,227,233,0.6) 70%, rgba(121,156,210,0.9) 100%)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                    color: "transparent"
-                  }}
-                >
-                  Chakroborty
+                  <span className="block text-sky-200">Chakroborty</span>
                 </h1>
 
-
-
-
-                <p className="  mt-6 text-lg md:text-xl lg:text-2xl text-muted-foreground leading-relaxed">
-                  <span
-                    style={{
-                      background: "linear-gradient(90deg, #00e4ff, #34d399)",
-                      WebkitBackgroundClip: "text",
-                      WebkitTextFillColor: "transparent",
-                    }}
-                  >
-                    Full Stack Generative AI Developer
-                  </span> crafting digital experiences at the intersection of{" "}
-                  <HighlightUnderline colorFrom="#00e4ff" colorTo="#0089ff" delay={0.2}>design</HighlightUnderline>,
-                  <HighlightUnderline colorFrom=" #22c55e" colorTo="#34d399" delay={0.2}>technology</HighlightUnderline>, and{" "}
-                  <HighlightUnderline colorFrom="#ffb100" colorTo="#ff2f00" delay={0.2}>user experience</HighlightUnderline>.
+                <p className="mt-6 max-w-3xl text-lg leading-relaxed text-slate-200 md:text-xl lg:text-2xl">
+                  <span className="font-medium text-amber-300">Full Stack Generative AI Developer</span> crafting digital experiences at the intersection of{" "}
+                  <HighlightUnderline colorFrom="#8ed7ff" colorTo="#4ea7ff" delay={0.2}>design</HighlightUnderline>,
+                  <HighlightUnderline colorFrom="#ffd37a" colorTo="#f59e0b" delay={0.2}>technology</HighlightUnderline>, and{" "}
+                  <HighlightUnderline colorFrom="#c4f1ff" colorTo="#7dd3fc" delay={0.2}>user experience</HighlightUnderline>.
                 </p>
 
 
-                <div className="mt-6 flex flex-wrap items-center gap-3 text-sm text-muted-foreground">
+                <div className="mt-6 flex flex-wrap items-center gap-3 text-sm text-slate-300">
                   <span className="inline-flex items-center gap-2">
                     <span className="h-2 w-2 rounded-full bg-emerald-500" aria-hidden />
                     Available for work
@@ -136,7 +68,7 @@ export default function HomePage() {
                     // }}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="rounded-lg border border-white/10 bg-white/5 px-5 py-3 hover:bg-white/10 transition"
+                    className="rounded-lg border border-white/15 bg-white/[0.06] px-5 py-3 text-slate-100 transition hover:bg-white/[0.12]"
                   >
                     Contact Me
                   </Link>
@@ -144,30 +76,30 @@ export default function HomePage() {
               </div>
 
               {/* Right column */}
-              <div className="w-full md:max-w-md md:mx-0 border border-black/20 dark:border-white/20 flex flex-col items-start p-4 sm:p-6 relative rounded-xl bg-white/5 dark:bg-black/20">
+              <div className="relative flex w-full flex-col items-start rounded-xl border border-white/15 bg-slate-950/35 p-4 backdrop-blur-md sm:p-6 md:mx-0 md:max-w-md">
                 {/* Decorative corner icons: hide on very small screens to avoid clutter */}
-                <Icon className="hidden sm:block absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
-                <Icon className="hidden sm:block absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
-                <Icon className="hidden sm:block absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
-                <Icon className="hidden sm:block absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
+                <Icon className="absolute -left-3 -top-3 hidden h-6 w-6 text-slate-100 sm:block" />
+                <Icon className="absolute -bottom-3 -left-3 hidden h-6 w-6 text-slate-100 sm:block" />
+                <Icon className="absolute -right-3 -top-3 hidden h-6 w-6 text-slate-100 sm:block" />
+                <Icon className="absolute -bottom-3 -right-3 hidden h-6 w-6 text-slate-100 sm:block" />
 
                 <div>
-                  <p className="text-xs tracking-widest text-muted-foreground dark:text-gray-300">CURRENTLY</p>
+                  <p className="text-xs tracking-[0.28em] text-slate-400">CURRENTLY</p>
                   <div className="mt-2">
-                    <p className="text-base font-semibold text-black dark:text-white">Software Developer</p>
-                    <p className="text-sm text-muted-foreground dark:text-gray-400">
+                    <p className="text-base font-semibold text-slate-50">Software Developer</p>
+                    <p className="text-sm text-slate-400">
                       @Prep-Piper <span className="opacity-60">· 2025 — Present</span>
                     </p>
                   </div>
                 </div>
 
                 <div className="mt-6 w-full">
-                  <p className="text-xs tracking-widest text-muted-foreground dark:text-gray-300">FOCUS</p>
+                  <p className="text-xs tracking-[0.28em] text-slate-400">FOCUS</p>
                   <ul className="mt-3 flex flex-wrap gap-2">
                     {["Next.js", "React", "TypeScript", "LangChain", "LangGraph", "Node.js", "RAG", "Agentic Workflows", "Automation"].map((tag) => (
                       <li
                         key={tag}
-                        className="rounded-full border border-black/10 bg-black/5 px-2 py-0.5 text-xs text-black/80 dark:border-white/20 dark:bg-white/10 dark:text-white/80"
+                        className="rounded-full border border-white/[0.12] bg-white/[0.08] px-2 py-0.5 text-xs text-slate-200"
                       >
                         {tag}
                       </li>
@@ -187,10 +119,10 @@ export default function HomePage() {
                       href={item.href}
                       target="_blank"
                       rel="noreferrer"
-                      className="w-full rounded-xl p-4 hover:scale-[1.01] transition dark:text-white text-black border border-white/[0.2]"
+                      className="w-full rounded-xl border border-white/[0.12] bg-white/[0.03] p-4 text-slate-100 transition hover:scale-[1.01] hover:bg-white/[0.06]"
                     >
                       <div className="text-sm font-medium">{item.label}</div>
-                      <div className="mt-1 text-sm text-black/75 dark:text-white/75">{item.handle}</div>
+                      <div className="mt-1 text-sm text-slate-400">{item.handle}</div>
                     </a>
                   ))}
                 </div>
@@ -199,9 +131,6 @@ export default function HomePage() {
 
 
           </div>
-
-
-          <div className="absolute bottom-0 left-0 right-0 h-24 bg-linear-to-t from-background via-background/80 to-transparent pointer-events-none"></div>
         </Section>
       </motion.div>
       <Projects />

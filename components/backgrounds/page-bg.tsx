@@ -26,9 +26,14 @@ export default function PageBg({
             : "/images/stripe.jpg"
 
   return (
-    // Use box-border so the border thickness doesn't change the visual
-    // size of the background container and avoid unexpected gaps.
-    <div aria-hidden className={"box-border  pointer-events-none absolute inset-0 -z-10 overflow-hidden" + (className ? ` ${className}` : "")}>
+    <div
+      aria-hidden
+      className={"box-border pointer-events-none absolute inset-0 -z-10 overflow-hidden" + (className ? ` ${className}` : "")}
+      style={{
+        maskImage: "linear-gradient(to bottom, black 60%, transparent 100%)",
+        WebkitMaskImage: "linear-gradient(to bottom, black 60%, transparent 100%)"
+      }}
+    >
       <motion.div className="absolute inset-0">
         <Image
           src={src || "/placeholder.svg"}
