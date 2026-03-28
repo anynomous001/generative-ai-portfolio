@@ -276,7 +276,7 @@ export function Component() {
             {[
               { label: "GitHub", href: "https://github.com/anynomous001", icon: Github },
               { label: "X", href: "https://x.com/Pritamchak001", icon: Twitter },
-              { label: "Hashnode", href: "https://hashnode.com/@Pritam-dev", icon: BookOpenText },
+              { label: "Hashnode", href: "https://hashnode.com/@pritam-dev", icon: BookOpenText },
               { label: "LinkedIn", href: "https://www.linkedin.com/in/pritamchakroborty/", icon: Linkedin },
             ].map((item) => {
               const Icon = item.icon;

@@ -55,7 +55,7 @@ const Contact = () => {
                             {[
                                 { label: "GitHub", handle: "@anynomous001", href: "https://github.com/anynomous001" },
                                 { label: "X", handle: "@Pritamchak001", href: "https://x.com/Pritamchak001" },
-                                { label: "Hashnode", handle: "@Pritam-dev", href: "https://hashnode.com/@Pritam-dev" },
+                                { label: "Hashnode", handle: "@pritam-dev", href: "https://hashnode.com/@pritam-dev" },
                                 { label: "LinkedIn", handle: "Pritam Chakroborty", href: "https://www.linkedin.com/in/pritamchakroborty/" },
                             ].map((item) => (
                                 <a

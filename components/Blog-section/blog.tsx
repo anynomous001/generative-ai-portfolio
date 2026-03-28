@@ -86,23 +86,23 @@ const Blog = () => {
                                     bgGradient: "from-black/95 via-black/92 to-black/80",
                                 },
                                 {
-                                    title: "Real-time Voice Processing with WebSockets and Deepgram",
-                                    excerpt: "A comprehensive guide to implementing real-time voice transcription in your web applications using WebSockets, Deepgram API, and optimized event handling.",
-                                    category: "Backend & API",
+                                    title: "Beyond Prompts: The Rise of Context Engineering",
+                                    excerpt: "Why modern AI systems need more than good prompts, and how context engineering changes the way we design reliable model behavior.",
+                                    category: "AI & LLMs",
                                     readTime: "15 min read",
                                     date: "Oct 28, 2025",
                                     gradient: "linear-gradient(135deg, rgba(230, 225, 215, 0.14), rgba(5, 5, 5, 0.02))",
-                                    url: "https://hashnode.com/@yourusername",
+                                    url: "https://prompt-engineering-effective-way-to-communicate-with-ai.hashnode.dev/beyond-prompts-the-rise-of-context-engineering",
                                     bgGradient: "from-black/95 via-black/92 to-black/80",
                                 },
                                 {
-                                    title: "Automating Your Workflow: n8n Patterns and Best Practices",
-                                    excerpt: "Master advanced n8n automation patterns including error handling, conditional logic, and integrations with third-party APIs for enterprise-grade automation.",
-                                    category: "Automation",
+                                    title: "Prompt Engineering: The Art of Effective AI Communication",
+                                    excerpt: "A practical look at how better prompt design improves output quality, control, and consistency across real product workflows.",
+                                    category: "AI & LLMs",
                                     readTime: "10 min read",
                                     date: "Oct 15, 2025",
                                     gradient: "linear-gradient(135deg, rgba(230, 225, 215, 0.14), rgba(5, 5, 5, 0.02))",
-                                    url: "https://hashnode.com/@yourusername",
+                                    url: "https://prompt-engineering-effective-way-to-communicate-with-ai.hashnode.dev/prompt-engineering-the-art-of-effective-ai-communication",
                                     bgGradient: "from-black/95 via-black/92 to-black/80",
                                 },
                                 {
@@ -112,7 +112,7 @@ const Blog = () => {
                                     readTime: "14 min read",
                                     date: "Oct 8, 2025",
                                     gradient: "linear-gradient(135deg, rgba(230, 225, 215, 0.14), rgba(5, 5, 5, 0.02))",
-                                    url: "https://hashnode.com/@yourusername",
+                                    url: "https://hashnode.com/@pritam-dev",
                                     bgGradient: "from-black/95 via-black/92 to-black/80",
                                 },
                                 {
@@ -122,7 +122,7 @@ const Blog = () => {
                                     readTime: "18 min read",
                                     date: "Sep 30, 2025",
                                     gradient: "linear-gradient(135deg, rgba(230, 225, 215, 0.14), rgba(5, 5, 5, 0.02))",
-                                    url: "https://hashnode.com/@yourusername",
+                                    url: "https://hashnode.com/@pritam-dev",
                                     bgGradient: "from-black/95 via-black/92 to-black/80",
                                 },
                                 {
@@ -132,7 +132,7 @@ const Blog = () => {
                                     readTime: "11 min read",
                                     date: "Sep 22, 2025",
                                     gradient: "linear-gradient(135deg, rgba(230, 225, 215, 0.14), rgba(5, 5, 5, 0.02))",
-                                    url: "https://hashnode.com/@yourusername",
+                                    url: "https://hashnode.com/@pritam-dev",
                                     bgGradient: "from-black/95 via-black/92 to-black/80",
                                 },
                             ].map((blog, i) => (
@@ -238,7 +238,7 @@ const Blog = () => {
                             className="mt-10 flex justify-center md:mt-12"
                         >
                             <a
-                                href="https://hashnode.com/@yourusername"
+                                href="https://hashnode.com/@pritam-dev"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="group relative inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-6 py-3 text-sm font-medium text-muted-foreground backdrop-blur-sm transition-all duration-300 hover:border-foreground/25 hover:bg-white/10 hover:text-foreground hover:shadow-lg hover:shadow-black/30 sm:px-8"
