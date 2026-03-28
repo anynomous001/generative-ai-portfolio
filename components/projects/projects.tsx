@@ -26,7 +26,7 @@ const projects: Project[] = [
     image: "/images/Prep-piper.jpg",
     tech: ["Next.js", "TypeScript", "AI SDK", "LangChain", "Analytics"],
     accent: "from-[#e6e1d7]/14 via-[#e6e1d7]/6 to-transparent",
-    demo: "#",
+    demo: "https://prep-piper-pritam-chakrobortys-projects.vercel.app/",
     repo: "#",
   },
   {
@@ -66,7 +66,7 @@ const projects: Project[] = [
     image: "/images/PictureWhisperAI.webp",
     tech: ["Next.js", "OpenAI API", "TypeScript", "Image AI"],
     accent: "from-[#e6e1d7]/14 via-[#e6e1d7]/6 to-transparent",
-    demo: "#",
+    demo: "https://image-whisper-ai.vercel.app/",
     repo: "#",
   },
   {
@@ -136,18 +136,22 @@ export default function Projects() {
                     <div className="flex items-start justify-between gap-4">
                       <h3 className="text-lg font-semibold text-foreground sm:text-xl">{project.title}</h3>
                       <div className="flex gap-2">
-                        {project.demo && (
+                        {project.demo && project.demo !== "#" && (
                           <Link
                             href={project.demo}
+                            target="_blank"
+                            rel="noreferrer"
                             className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-foreground/12 bg-white/[0.06] text-foreground transition hover:bg-white/[0.12] sm:h-9 sm:w-9"
                             aria-label={`Open ${project.title} demo`}
                           >
                             <ArrowUpRight size={15} />
                           </Link>
                         )}
-                        {project.repo && (
+                        {project.repo && project.repo !== "#" && (
                           <Link
                             href={project.repo}
+                            target="_blank"
+                            rel="noreferrer"
                             className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-foreground/12 bg-white/[0.06] text-foreground transition hover:bg-white/[0.12] sm:h-9 sm:w-9"
                             aria-label={`Open ${project.title} repository`}
                           >
