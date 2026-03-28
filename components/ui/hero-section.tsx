@@ -255,11 +255,20 @@ export function Component() {
               <span aria-hidden>→</span>
             </Link>
             <Link
-              href="mailto:chakrobortypritam1@gmail.com"
+              href="mailto:chakrobortypritam.work@gmail.com"
               className="inline-flex w-full items-center justify-center gap-3 rounded-2xl border px-6 py-3.5 text-base font-medium transition hover:bg-white/[0.04] sm:w-auto sm:px-6 sm:py-4 sm:text-lg"
               style={{ borderColor: "rgba(200,180,160,0.18)", color: colors[50], background: "rgba(255,255,255,0.04)" }}
             >
               Contact Me
+            </Link>
+            <Link
+              href="https://calendly.com/chakrobortypritam1/booking-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex w-full items-center justify-center gap-3 rounded-2xl border px-6 py-3.5 text-base font-medium transition hover:bg-white/[0.04] sm:w-auto sm:px-6 sm:py-4 sm:text-lg"
+              style={{ borderColor: "rgba(248,247,245,0.22)", color: colors[50] }}
+            >
+              Book a Call
             </Link>
           </div>
 

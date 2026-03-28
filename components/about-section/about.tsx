@@ -35,9 +35,9 @@ const About = () => {
                         </h1>
 
                         <p className="mt-4 max-w-5xl text-base leading-7 font-extralight text-muted-foreground md:text-lg md:leading-9">
-                            Hey there! I'm{" "}
+                            I build{" "}
                             <span className="relative inline-block group cursor-default">
-                                <span className="relative z-10 text-foreground font-normal">Pritam Chakroborty</span>
+                                <span className="relative z-10 text-foreground font-normal">full-stack AI products</span>
                                 <motion.span
                                     className="warm-underline"
                                     initial={{ width: 0 }}
@@ -45,10 +45,10 @@ const About = () => {
                                     transition={{ duration: 0.8, delay: 0.2 }}
                                     viewport={{ once: true }}
                                 />
-                            </span>
-                            , a{" "}
+                            </span>{" "}
+                            that{" "}
                             <span className="relative inline-block group cursor-default">
-                                <span className="relative z-10 text-foreground font-normal">Fullstack Generative AI Developer</span>
+                                <span className="relative z-10 text-foreground font-normal">ship fast and scale smart</span>
                                 <motion.span
                                     className="warm-underline"
                                     initial={{ width: 0 }}
@@ -56,10 +56,10 @@ const About = () => {
                                     transition={{ duration: 0.8, delay: 0.4 }}
                                     viewport={{ once: true }}
                                 />
-                            </span>{" "}
-                            from Kolkata, India — a computer science student turned{" "}
+                            </span>
+                            . From{" "}
                             <span className="relative inline-block group cursor-default">
-                                <span className="relative z-10 text-foreground font-normal">self-taught builder</span>
+                                <span className="relative z-10 text-foreground font-normal">LangGraph agentic pipelines</span>
                                 <motion.span
                                     className="warm-underline"
                                     initial={{ width: 0 }}
@@ -68,9 +68,9 @@ const About = () => {
                                     viewport={{ once: true }}
                                 />
                             </span>{" "}
-                            with an endless curiosity for{" "}
+                            to{" "}
                             <span className="relative inline-block group cursor-default">
-                                <span className="relative z-10 text-foreground font-normal">all things AI</span>
+                                <span className="relative z-10 text-foreground font-normal">production Next.js dashboards</span>
                                 <motion.span
                                     className="warm-underline"
                                     initial={{ width: 0 }}
@@ -79,10 +79,11 @@ const About = () => {
                                     viewport={{ once: true }}
                                 />
                             </span>
-                            .
-                            <br />From experimenting with the latest{" "}
+                            , I take ownership of the full system: architecture, backend, frontend, and deployment.
+                            <br />
+                            Currently building{" "}
                             <span className="relative inline-block group cursor-default">
-                                <span className="relative z-10 text-foreground font-normal">Generative AI breakthroughs</span>
+                                <span className="relative z-10 text-foreground font-normal">Prep-Piper</span>
                                 <motion.span
                                     className="warm-underline"
                                     initial={{ width: 0 }}
@@ -90,10 +91,10 @@ const About = () => {
                                     transition={{ duration: 0.8, delay: 1.0 }}
                                     viewport={{ once: true }}
                                 />
-                            </span>{" "}
-                            to setting up backend systems from scratch, I love staying at the{" "}
+                            </span>
+                            , an{" "}
                             <span className="relative inline-block group cursor-default">
-                                <span className="relative z-10 text-foreground font-normal">cutting edge</span>
+                                <span className="relative z-10 text-foreground font-normal">AI-powered interview platform</span>
                                 <motion.span
                                     className="warm-underline"
                                     initial={{ width: 0 }}
@@ -102,77 +103,7 @@ const About = () => {
                                     viewport={{ once: true }}
                                 />
                             </span>
-                            . With AI evolving at lightning speed, adaptability isn’t a skill — it’s survival.
-                            <br />
-                            I help individuals and businesses stay ahead of the curve — whether it’s{" "}
-                            <span className="relative inline-block group cursor-default">
-                                <span className="relative z-10 text-foreground font-normal">automating workflows</span>
-                                <motion.span
-                                    className="warm-underline"
-                                    initial={{ width: 0 }}
-                                    whileInView={{ width: "100%" }}
-                                    transition={{ duration: 0.8, delay: 1.4 }}
-                                    viewport={{ once: true }}
-                                />
-                            </span>
-                            ,{" "}
-                            <span className="relative inline-block group cursor-default">
-                                <span className="relative z-10 text-foreground font-normal">optimizing systems</span>
-                                <motion.span
-                                    className="warm-underline"
-                                    initial={{ width: 0 }}
-                                    whileInView={{ width: "100%" }}
-                                    transition={{ duration: 0.8, delay: 1.6 }}
-                                    viewport={{ once: true }}
-                                />
-                            </span>
-                            , or building{" "}
-                            <span className="relative inline-block group cursor-default">
-                                <span className="relative z-10 text-foreground font-normal">AI-driven products</span>
-                                <motion.span
-                                    className="warm-underline"
-                                    initial={{ width: 0 }}
-                                    whileInView={{ width: "100%" }}
-                                    transition={{ duration: 0.8, delay: 1.8 }}
-                                    viewport={{ once: true }}
-                                />
-                            </span>
-                            . My recent creation,{" "}
-                            <span className="relative inline-block group cursor-default">
-                                <span className="relative z-10 text-foreground font-normal">Prep-Piper</span>
-                                <motion.span
-                                    className="warm-underline"
-                                    initial={{ width: 0 }}
-                                    whileInView={{ width: "100%" }}
-                                    transition={{ duration: 0.8, delay: 2.0 }}
-                                    viewport={{ once: true }}
-                                />
-                            </span>
-                            , uses AI agents to streamline mock interviews and deliver feedback — redefining how interview prep works.
-                            <br />
-                            Outside of code, you’ll find me{" "}
-                            <span className="relative inline-block group cursor-default">
-                                <span className="relative z-10 text-foreground font-normal">writing blogs</span>
-                                <motion.span
-                                    className="warm-underline"
-                                    initial={{ width: 0 }}
-                                    whileInView={{ width: "100%" }}
-                                    transition={{ duration: 0.8, delay: 2.2 }}
-                                    viewport={{ once: true }}
-                                />
-                            </span>{" "}
-                            about my learnings, exploring new ideas, or recharging with a{" "}
-                            <span className="relative inline-block group cursor-default">
-                                <span className="relative z-10 text-foreground font-normal">good book or movie</span>
-                                <motion.span
-                                    className="warm-underline"
-                                    initial={{ width: 0 }}
-                                    whileInView={{ width: "100%" }}
-                                    transition={{ duration: 0.8, delay: 2.4 }}
-                                    viewport={{ once: true }}
-                                />
-                            </span>
-                            . Always curious. Always building. Always learning.
+                            , and always open to the right product opportunity.
                         </p>
 
 

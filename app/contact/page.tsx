@@ -17,7 +17,7 @@ export default function ContactPage() {
               Always interested in new opportunities, collaborations, and conversations about technology and design.
             </p>
             <a
-              href="mailto:test@example.com"
+              href="mailto:chakrobortypritam.work@gmail.com"
               className="mt-6 inline-flex items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-4 py-2 hover:bg-white/10 transition"
               aria-label="Email"
             >

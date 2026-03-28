@@ -31,11 +31,20 @@ const Contact = () => {
                             Always interested in new opportunities, collaborations, and conversations about technology and design.
                         </p>
                         <a
-                            href="mailto:test@example.com"
+                            href="mailto:chakrobortypritam.work@gmail.com"
                             className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-lg border border-white/10 bg-white/5 px-4 py-3 transition hover:bg-white/10 sm:w-auto"
                             aria-label="Email"
                         >
-                            chakrobortypritam1@gmail.com <span aria-hidden>→</span>
+                            chakrobortypritam.work@gmail.com <span aria-hidden>→</span>
+                        </a>
+                        <a
+                            href="https://calendly.com/chakrobortypritam1/booking-link"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="mt-3 inline-flex w-full items-center justify-center gap-2 rounded-lg border border-white/10 px-4 py-3 transition hover:bg-white/10 sm:mt-6 sm:ml-3 sm:w-auto"
+                            aria-label="Book a call"
+                        >
+                            Book a Call <span aria-hidden>→</span>
                         </a>
                     </div>
 
