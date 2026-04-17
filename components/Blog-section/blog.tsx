@@ -106,13 +106,13 @@ const Blog = () => {
                                     bgGradient: "from-black/95 via-black/92 to-black/80",
                                 },
                                 {
-                                    title: "Next.js Performance Optimization: From SSR to ISR",
-                                    excerpt: "Deep dive into Next.js rendering strategies. Learn when to use SSG, SSR, ISR, and CSR for optimal performance, SEO, and user experience.",
-                                    category: "Frontend",
+                                    title: "Deep Agents: LangChain Context Engineering in Action",
+                                    excerpt: "A practical look at how deeper agent workflows and context engineering come together inside LangChain-based systems.",
+                                    category: "AI & LLMs",
                                     readTime: "14 min read",
                                     date: "Oct 8, 2025",
                                     gradient: "linear-gradient(135deg, rgba(230, 225, 215, 0.14), rgba(5, 5, 5, 0.02))",
-                                    url: "https://hashnode.com/@pritam-dev",
+                                    url: "https://prompt-engineering-effective-way-to-communicate-with-ai.hashnode.dev/deep-agents-langchain-context-engineering-in-action",
                                     bgGradient: "from-black/95 via-black/92 to-black/80",
                                 },
                                 {
