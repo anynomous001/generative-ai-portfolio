@@ -109,7 +109,7 @@ export function Component() {
   }, []);
 
   return (
-    <div className="relative min-h-dvh w-full overflow-hidden bg-[#050505] font-primary text-[#e6e1d7]">
+    <div className="relative min-h-dvh w-full overflow-hidden bg-[#050505] text-[#e6e1d7]">
       <div className="absolute inset-0 z-0 overflow-hidden">
         <ShaderBackground className="opacity-72" />
       </div>
@@ -182,7 +182,7 @@ export function Component() {
           </p>
 
           <h1
-            className="mt-5 text-decoration text-4xl font-semibold leading-[0.98] tracking-tight sm:text-6xl md:text-7xl lg:text-[5.8rem]"
+            className="mt-5 text-decoration text-[2.5rem] font-semibold leading-[0.98] tracking-tight sm:text-6xl md:text-7xl lg:text-[5.8rem]"
             style={{ color: colors[200] }}
           >
             <span className="block">Pritam</span>
@@ -190,39 +190,56 @@ export function Component() {
           </h1>
 
           <div
-            className="mx-auto mt-6 max-w-4xl text-base font-normal leading-[1.5] tracking-[-0.02em] sm:text-xl md:mt-8 md:max-w-5xl md:text-[1.95rem]"
+            className="mx-auto mt-6 max-w-4xl text-sm font-normal leading-[1.6] tracking-[-0.02em] sm:text-lg md:mt-8 md:max-w-5xl md:text-[1.75rem] md:leading-[1.5]"
             style={{ color: colors[50] }}
           >
-            <span>Full Stack Generative AI Developer </span>
-            <span style={{ color: colors[200] }}>crafting digital experiences at the intersection of </span>
+            <span style={{ color: colors[200] }}>Founders and operators come to me when they need AI built properly — </span>
+            <span>not wrapped around GPT, not prototyped, but </span>
             <span className="underline decoration-2 underline-offset-6" style={{ textDecorationColor: "#3ec9ff" }}>
-              design,
+              production-grade
             </span>
-            <span> </span>
+            <span> and </span>
             <span className="underline decoration-2 underline-offset-6" style={{ textDecorationColor: "#6ad58a" }}>
-              technology,
+              actually solving
             </span>
-            <span style={{ color: colors[200] }}> and </span>
-            <span className="underline decoration-2 underline-offset-6" style={{ textDecorationColor: colors[200] }}>
-              user experience.
-            </span>
+            <span style={{ color: colors[200] }}> the business problem.</span>
           </div>
 
           <div className="mx-auto mt-10 max-w-5xl md:mt-12">
             <div className="flex flex-col items-center gap-6">
               <div>
                 <p className="text-[11px] font-medium tracking-[0.22em] sm:text-xs" style={{ color: colors[50] }}>
-                  FOCUS
+                  TECHNICAL FOCUS
                 </p>
                 <ul className="mt-4 flex flex-wrap justify-center gap-2">
                   {["Next.js", "React", "TypeScript", "LangChain", "Python", "LangGraph", "Node.js", "RAG", "Agentic Workflows", "Automation"].map((tag) => (
                     <li
                       key={tag}
-                      className="rounded-full border px-3 py-1.5 text-xs sm:text-sm"
+                      className="border px-3 py-1.5 text-xs sm:text-sm"
                       style={{
                         borderColor: "rgba(248,247,245,0.22)",
                         background: "transparent",
                         color: colors[50],
+                      }}
+                    >
+                      {tag}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <p className="text-[11px] font-medium tracking-[0.22em] sm:text-xs" style={{ color: colors[50] }}>
+                  BUSINESS OUTCOMES
+                </p>
+                <ul className="mt-4 flex flex-wrap justify-center gap-2">
+                  {["AI Automation", "MVP Development", "LLM Integration", "Workflow Systems", "Agentic Pipelines"].map((tag) => (
+                    <li
+                      key={tag}
+                      className="border px-3 py-1.5 text-xs sm:text-sm"
+                      style={{
+                        borderColor: "rgba(200,180,160,0.3)",
+                        background: "rgba(200,180,160,0.06)",
+                        color: colors[200],
                       }}
                     >
                       {tag}
@@ -244,29 +261,36 @@ export function Component() {
           </div>
 
           <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
+            {/* Primary CTA */}
+            <Link
+              href="/services"
+              className="inline-flex w-full items-center justify-center gap-3 border px-5 py-3 text-sm font-semibold transition sm:w-auto sm:px-6 sm:py-4 sm:text-base"
+              style={{
+                borderColor: "#c8b4a0",
+                color: "#050505",
+                background: "#c8b4a0",
+              }}
+            >
+              Work With Me
+              <span aria-hidden>→</span>
+            </Link>
+            {/* Secondary CTAs */}
             <Link
               href="/Generative_AI_Portfolio.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex w-full items-center justify-center gap-3 rounded-2xl border px-6 py-3.5 text-base font-medium transition hover:bg-white/[0.04] sm:w-auto sm:px-6 sm:py-4 sm:text-lg"
-              style={{ borderColor: "rgba(248,247,245,0.22)", color: colors[50] }}
+              className="inline-flex w-full items-center justify-center gap-3 border px-5 py-3 text-sm font-medium transition hover:border-[rgba(200,180,160,0.4)] hover:bg-[rgba(200,180,160,0.06)] sm:w-auto sm:px-6 sm:py-4 sm:text-base"
+              style={{ borderColor: "rgba(248,247,245,0.18)", color: colors[200] }}
             >
               Resume
               <span aria-hidden>→</span>
             </Link>
             <Link
-              href="mailto:chakrobortypritam.work@gmail.com"
-              className="inline-flex w-full items-center justify-center gap-3 rounded-2xl border px-6 py-3.5 text-base font-medium transition hover:bg-white/[0.04] sm:w-auto sm:px-6 sm:py-4 sm:text-lg"
-              style={{ borderColor: "rgba(200,180,160,0.18)", color: colors[50], background: "rgba(255,255,255,0.04)" }}
-            >
-              Contact Me
-            </Link>
-            <Link
               href="https://calendly.com/chakrobortypritam1/booking-link"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex w-full items-center justify-center gap-3 rounded-2xl border px-6 py-3.5 text-base font-medium transition hover:bg-white/[0.04] sm:w-auto sm:px-6 sm:py-4 sm:text-lg"
-              style={{ borderColor: "rgba(248,247,245,0.22)", color: colors[50] }}
+              className="inline-flex w-full items-center justify-center gap-3 border px-5 py-3 text-sm font-medium transition hover:border-[rgba(200,180,160,0.4)] hover:bg-[rgba(200,180,160,0.06)] sm:w-auto sm:px-6 sm:py-4 sm:text-base"
+              style={{ borderColor: "rgba(248,247,245,0.18)", color: colors[200] }}
             >
               Book a Call
             </Link>
@@ -287,7 +311,7 @@ export function Component() {
                   target="_blank"
                   rel="noreferrer"
                   aria-label={item.label}
-                  className="inline-flex h-11 w-11 items-center justify-center rounded-full border transition hover:bg-white/[0.05] sm:h-12 sm:w-12"
+                  className="inline-flex h-11 w-11 items-center justify-center border transition hover:bg-white/[0.05] sm:h-12 sm:w-12"
                   style={{
                     borderColor: "rgba(248,247,245,0.15)",
                     background: "rgba(255,255,255,0.025)",

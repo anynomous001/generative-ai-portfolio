@@ -16,6 +16,15 @@ interface Project {
 
 const projects: Project[] = [
   {
+    id: 0,
+    title: "Trupas Merchant Identity Infrastructure",
+    description: `Trupas is a merchant identity infrastructure concept built around a purpose-built kiosk and a centralized dashboard for fast, audit-ready front desk verification. The system pairs hardware at the door with a calm operations console: kiosks read IDs across 200+ document types, perform face matching, work through WAN issues with local buffering and rolling re-sync, and lock down with tamper alerts in under a second. The console gives operators one place to monitor kiosks, terminals, locations, sync health, audit trails, and team activity. The product story is intentionally operational: low-friction guest flow at the desk, quiet monitoring in the background, and enough traceability to hand to a regulator without rebuilding the story after the fact.`,
+    image: "/images/trupas-landing.png",
+    color: "from-cyan-600 to-emerald-400",
+    glassColor: "rgba(62, 201, 255, 0.09)",
+    skills: ["Next.js", "TypeScript", "Framer Motion", "Dashboard UX", "Hardware Systems"],
+  },
+  {
     id: 1,
     title: "Prep Piper AI Interviewer",
     description: `Prep Piper is a comprehensive AI-powered interview preparation platform designed to transform how candidates prepare for job interviews. It leverages advanced AI agents to conduct realistic mock interviews, analyze performance in real-time, and deliver personalized feedback tailored to each user's strengths and weaknesses. The platform features intelligent question generation across multiple domains and difficulty levels, simulating authentic interview scenarios. Users benefit from real-time feedback during mock sessions, detailed performance analytics, personalized coaching recommendations, conversation analysis with sentiment tracking, and curated resources for skill improvement. With adaptive learning paths that adjust based on performance, Prep Piper helps candidates build confidence, refine their communication skills, and master technical concepts—ensuring they're fully prepared to ace their dream job interviews.`,
@@ -59,15 +68,6 @@ const projects: Project[] = [
     color: "from-indigo-600 to-blue-400",
     glassColor: "rgba(99, 102, 241, 0.08)",
     skills: ["Next.js", "OpenAI API", "TypeScript", "Image Processing", "AI"],
-  },
-  {
-    id: 6,
-    title: "Quizzicle",
-    description: `A quiz platform where you can create your own quizzes and test your knowledge on a variety of topics. Features custom quiz creation, topic categorization, score tracking, and an engaging user interface for both quiz creators and participants.`,
-    image: "/images/quizzicle.webp",
-    color: "from-yellow-600 to-orange-400",
-    glassColor: "rgba(234, 179, 8, 0.08)",
-    skills: ["React", "TypeScript", "Node.js", "MongoDB", "Express"],
   },
 ]
 
