@@ -24,11 +24,11 @@ export const metadata: Metadata = {
   description:
     "I build AI products and automation systems for founders and operators. LangGraph, RAG, Next.js, Python — production-grade, end to end.",
   manifest: "/manifest.webmanifest",
-  metadataBase: new URL("https://pritamchakroborty.dev"),
+  metadataBase: new URL("https://generative-ai-portfolio.vercel.app"),
   icons: [{ rel: "icon", url: "/icon.jpg" }],
   openGraph: {
     type: "website",
-    url: "https://pritamchakroborty.dev",
+    url: "https://generative-ai-portfolio.vercel.app",
     siteName: "Pritam Chakroborty",
     locale: "en_US",
     title: "Pritam Chakroborty — AI & Full-Stack Developer Portfolio",
