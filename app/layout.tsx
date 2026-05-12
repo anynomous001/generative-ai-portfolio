@@ -36,9 +36,9 @@ export const metadata: Metadata = {
       "I build AI products and automation systems for founders and operators. LangGraph, RAG, Next.js, Python — production-grade, end to end.",
     images: [
       {
-        url: "/og.jpg",
-        width: 1024,
-        height: 1024,
+        url: "/images/Profile.jpeg",
+        width: 864,
+        height: 1184,
         alt: "Pritam Chakroborty — AI & Full-Stack Developer",
       },
     ],
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     title: "Pritam Chakroborty — AI & Full-Stack Developer",
     description:
       "I build AI products and automation systems for founders and operators. LangGraph, RAG, Next.js, Python — production-grade, end to end.",
-    images: ["/og.jpg"],
+    images: ["/images/Profile.jpeg"],
   },
 }
 
