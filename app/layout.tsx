@@ -27,6 +27,24 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://pritamchakroborty.dev"),
   icons: [{ rel: "icon", url: "/icon.jpg" }],
   openGraph: {
+    type: "website",
+    url: "https://pritamchakroborty.dev",
+    siteName: "Pritam Chakroborty",
+    locale: "en_US",
+    title: "Pritam Chakroborty — AI & Full-Stack Developer",
+    description:
+      "I build AI products and automation systems for founders and operators. LangGraph, RAG, Next.js, Python — production-grade, end to end.",
+    images: [
+      {
+        url: "/og.jpg",
+        width: 1024,
+        height: 1024,
+        alt: "Pritam Chakroborty — AI & Full-Stack Developer",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
     title: "Pritam Chakroborty — AI & Full-Stack Developer",
     description:
       "I build AI products and automation systems for founders and operators. LangGraph, RAG, Next.js, Python — production-grade, end to end.",
