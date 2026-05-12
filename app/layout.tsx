@@ -20,7 +20,7 @@ const mono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Pritam Chakroborty — AI & Full-Stack Developer",
+  title: "Pritam Chakroborty — AI & Full-Stack Developer Portfolio",
   description:
     "I build AI products and automation systems for founders and operators. LangGraph, RAG, Next.js, Python — production-grade, end to end.",
   manifest: "/manifest.webmanifest",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     url: "https://pritamchakroborty.dev",
     siteName: "Pritam Chakroborty",
     locale: "en_US",
-    title: "Pritam Chakroborty — AI & Full-Stack Developer",
+    title: "Pritam Chakroborty — AI & Full-Stack Developer Portfolio",
     description:
       "I build AI products and automation systems for founders and operators. LangGraph, RAG, Next.js, Python — production-grade, end to end.",
     images: [
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pritam Chakroborty — AI & Full-Stack Developer",
+    title: "Pritam Chakroborty — AI & Full-Stack Developer Portfolio",
     description:
       "I build AI products and automation systems for founders and operators. LangGraph, RAG, Next.js, Python — production-grade, end to end.",
     images: ["/images/Profile.jpeg"],
