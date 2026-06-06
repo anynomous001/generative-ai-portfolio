@@ -50,6 +50,9 @@ export const metadata: Metadata = {
       "I build AI products and automation systems for founders and operators. LangGraph, RAG, Next.js, Python — production-grade, end to end.",
     images: ["/images/Profile.jpeg"],
   },
+  other: {
+    "facebook-domain-verification": "7ydmo7o2mzhts1hgff0yyirt6b3a7e",
+  },
 }
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
